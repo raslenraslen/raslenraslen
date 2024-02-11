@@ -8,10 +8,10 @@
     <a href="https://www.instagram.com/raslenmissaoui07/"><img src="https://img.shields.io/badge/instagram-%23E4415F?style=flat&logo=instagram&logoColor=white"/></a>
   </p>
    <p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include Java, SQL,and Python.</p>
+   </br>
   
-  
-  <p>   Languages I use</p> 
-  </br>
+  <h3 align="left">Languages</h3> 
+ 
 
 ![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c)
 ![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B)
