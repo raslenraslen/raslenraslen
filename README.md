@@ -1,4 +1,4 @@
-![giphy (2)](https://github.com/raslenraslen/raslenraslen/assets/149624976/f55449dc-6c5c-469c-9bb5-af02c0a1ecf5)
+
 <h1 align="center" > Hi there  👋 I'm Raslen </h1> 
 <h2 align="center" > A software engineering Student from Tunisia🧑🏻‍💻 </h2> 
 
