@@ -10,7 +10,13 @@
   </p>
    <p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include Java, SQL,and Python.</p>
    </br>
-  
+  ## About me 
+
+:heart: gaming | :black_heart: bodybuilding  | :blue_heart: Programming
+
+- :earth_americas: I'm from Tunisia
+- :video_game: I like to play video games
+- :gem: I love to customize everything 
   <h3 align="left">Languages</h3> 
  
 
