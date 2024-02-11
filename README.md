@@ -17,8 +17,10 @@
 - :earth_americas: I'm from Tunisia
 - :video_game: I like to play video games
 - :gem: I love to customize everything 
+<img src=C:\Users\user\Desktop\Nouveau dossier (2) >
+
   <h3 align="left">Languages</h3> 
-  ![gif3](https://github.com/raslenraslen/raslenraslen/assets/149624976/dee00923-c46a-411a-a965-652cd4361b86)
+  
 
  
 
