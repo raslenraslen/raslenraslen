@@ -36,9 +36,9 @@
 
 
 
-
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&show_icons=true)](https://github.com/anuraghazra/github-readme-stats&show_icons=true)
+
 
 
 
