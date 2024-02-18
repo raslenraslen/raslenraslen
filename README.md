@@ -39,7 +39,7 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8)
-[![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d)](https://gist.github.com/Yizack/bbfce31e0217a3689c8d961a356cb10d/)
+
 
 
 
