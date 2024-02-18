@@ -37,7 +37,7 @@
 
 
 <img alt="mystats" src="https://github-readme-stats.vercel.app/api?username=raslenraslen"/>
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen)](https://github.com/raslenraslen/github-readme-stats)
 
 
 
