@@ -7,6 +7,7 @@
     <a href=https://www.linkedin.com/in/missaoui-raslen-6a8620298/><img src="https://img.shields.io/badge/linkedin-%230177B5?style=flat&logo=linkedin&logoColor=white"/></a>
     <a href="https://www.youtube.com/c/mohamedabusrea"><img src="https://img.shields.io/badge/youtube-%23FF0000?style=flat&logo=youtube&logoColor=white"/></a>
     <a href="https://www.instagram.com/raslenmissaoui07/"><img src="https://img.shields.io/badge/instagram-%23E4415F?style=flat&logo=instagram&logoColor=white"/></a>
+  ![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=jwenjian.visitor-badge)
   </p>
    <p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include Java, SQL,and Python.</p>
    </br>
