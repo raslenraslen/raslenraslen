@@ -37,8 +37,8 @@
 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8&theme=dark)
 [![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
 
 
