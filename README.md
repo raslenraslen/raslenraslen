@@ -19,7 +19,8 @@
 - :video_game: I like to play video games
 - :gem: I love to customize everything 
 
-![gif3](https://github.com/raslenraslen/raslenraslen/assets/149624976/d6ad5e32-dca1-4c75-b357-04aab95fe240)
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge&left_color=red&right_color=green&left_text=Hello%20Visitors)
+
 
   <h3 align="left">Languages</h3> 
   
