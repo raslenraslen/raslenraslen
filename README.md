@@ -19,7 +19,8 @@
 - :video_game: I like to play video games
 - :gem: I love to customize everything 
 
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge&left_color=red&right_color=green&left_text=Hello%20Visitors)
+![Visitor Count](https://profile-counter.glitch.me/{raslenraslen}/count.svg)
+
 
 
   <h3 align="left">Languages</h3> 
