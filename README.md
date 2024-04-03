@@ -43,6 +43,9 @@
 [![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
 
 
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge)
+
+
 
 
 
