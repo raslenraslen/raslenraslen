@@ -1,4 +1,7 @@
-<h1 align="center">Hi there 👋 I'm Raslen</h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?lines=Hello,+I'm+Missaoui+Raslen!&center=true&size=25">
+</h1>
+
 <h2 align="center">A software engineering Student from Tunisia 🧑🏻‍💻</h2>
 
 <p align="center">
@@ -46,10 +49,9 @@
   ![GitHub](https://img.shields.io/badge/-GitHub-000000?style=flat&logo=github)
   ![Bitbucket](https://img.shields.io/badge/-Bitbucket-000000?style=flat&logo=bitbucket)
   ![Postman](https://img.shields.io/badge/-Postman-000000?style=flat&logo=postman)
-  ![Azure](https://img.shields.io/badge/-Azure-000000?style=flat&logo=azure)
+  ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
   ![VSCode](https://img.shields.io/badge/-VSCode-000000?style=flat&logo=visual-studio-code)
   ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-000000?style=flat&logo=intellijidea)
-     ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
 </p>
 
 ## ⚡ GitHub Stats 
