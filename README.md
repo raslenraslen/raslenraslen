@@ -8,7 +8,7 @@
     <a href="https://www.instagram.com/raslenmissaoui07/"><img src="https://img.shields.io/badge/instagram-%23E4415F?style=flat&logo=instagram&logoColor=white" /></a>
 </p>
 
-<p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include JavaScript, SQL, React, Python, TypeScript, SCSS, Angular, Node.js, Django, MongoDB, and Docker.</p>
+<p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include JavaScript, SQL, React, Python.</p>
 
 <br>
 
@@ -22,14 +22,34 @@
 
 ![Visitor Count](https://profile-counter.glitch.me/{raslenraslen}/count.svg)
 
-<h3 align="left">Languages</h3>
+<h3 align="left">Languages</h3> 
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=c,c++,html,java,python,sql,javascript,typescript,scss,angular,nodejs,react,django,mongodb,docker" />
+  ![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c)
+  ![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B)
+  ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5)
+  ![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java)
+  ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
+  ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
+  ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql)
+  ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
+  ![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass)
+  ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+  ![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular)
+  ![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js)
+  ![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
+  ![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
 </p>
 
 <h3 align="left">Tools</h3>
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=git,github,bitbucket,postman,latex,azure,vscode,npm,idea,rabbitmq,kafka" />
+  ![Git](https://img.shields.io/badge/-Git-000000?style=flat&logo=git)
+  ![GitHub](https://img.shields.io/badge/-GitHub-000000?style=flat&logo=github)
+  ![Bitbucket](https://img.shields.io/badge/-Bitbucket-000000?style=flat&logo=bitbucket)
+  ![Postman](https://img.shields.io/badge/-Postman-000000?style=flat&logo=postman)
+  ![Azure](https://img.shields.io/badge/-Azure-000000?style=flat&logo=azure)
+  ![VSCode](https://img.shields.io/badge/-VSCode-000000?style=flat&logo=visual-studio-code)
+  ![IntelliJ IDEA](https://img.shields.io/badge/-IntelliJ%20IDEA-000000?style=flat&logo=intellijidea)
+     ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
 </p>
 
 ## ⚡ GitHub Stats 
