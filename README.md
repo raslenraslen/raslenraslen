@@ -39,6 +39,7 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js)
 ![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
+![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux)
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
