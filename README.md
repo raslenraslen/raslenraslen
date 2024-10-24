@@ -21,7 +21,7 @@
 
 ![Visitor Count](https://profile-counter.glitch.me/{raslenraslen}/count.svg)
 
-<h3 align="left">Languages</h3> 
+<h3 align="left">Languages & Technologies</h3> 
 
 ![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c)
 ![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B)
@@ -32,6 +32,13 @@
 ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql)
 ![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r)
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
+![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass)
+![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular)
+![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
+![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js)
+![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
+![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
