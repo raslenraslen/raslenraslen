@@ -1,9 +1,11 @@
-<h1 align="center" > Hi there 👋 I'm Raslen </h1> 
-<h2 align="center" > A software engineering Student from Tunisia🧑🏻‍💻 </h2> 
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=000000&center=true&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B;I'm+Raslen" alt="Typing Animation">
+</h1> 
+<h2 align="center"> A software engineering Student from Tunisia🧑🏻‍💻 </h2> 
 
 <p align="center">
     <a href="https://twitter.com/RaslenMiss45861"><img src="https://img.shields.io/badge/twitter-%231FA1F1?style=flat&logo=twitter&logoColor=white"/></a>
-    <a href=https://www.linkedin.com/in/missaoui-raslen-6a8620298/><img src="https://img.shields.io/badge/linkedin-%230177B5?style=flat&logo=linkedin&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/"><img src="https://img.shields.io/badge/linkedin-%230177B5?style=flat&logo=linkedin&logoColor=white"/></a>
     <a href="https://www.youtube.com/c/mohamedabusrea"><img src="https://img.shields.io/badge/youtube-%23FF0000?style=flat&logo=youtube&logoColor=white"/></a>
     <a href="https://www.instagram.com/raslenmissaoui07/"><img src="https://img.shields.io/badge/instagram-%23E4415F?style=flat&logo=instagram&logoColor=white"/></a>
 </p>
@@ -33,32 +35,3 @@
 ![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r)
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
-![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass)
-![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular)
-![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react)
-![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js)
-![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
-![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
-![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux)
-
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8&theme=dark)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
-
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge)
-
-<!--
-**raslenraslen/raslenraslen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
