@@ -35,3 +35,27 @@
 ![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r)
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
+
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8&theme=dark)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
+
+![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge)
+
+<!--
+**raslenraslen/raslenraslen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
+
