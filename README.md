@@ -25,20 +25,21 @@
 
 <h3 align="left">Languages & Technologies</h3> 
 
-![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c)
-![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B)
-![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5)
-![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript)
-![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python)
-![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql)
-![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r)
-![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
-![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
-![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
-![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring)
-![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet)
+![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c&logoWidth=30)
+![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B&logoWidth=30)
+![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoWidth=30)
+![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java&logoWidth=30)
+![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript&logoWidth=30)
+![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoWidth=30)
+![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql&logoWidth=30)
+![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r&logoWidth=30)
+![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoWidth=30)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript&logoWidth=30)
+![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb&logoWidth=30)
+![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django&logoWidth=30)
+![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring&logoWidth=30)
+![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
+
 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
