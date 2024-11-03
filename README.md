@@ -2,7 +2,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=000000&center=true&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B;I'm+Raslen" alt="Typing Animation">
 </h1> 
 
-
+![Mon Image](image.jpg)
  
 
 <p align="center">
