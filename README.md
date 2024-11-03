@@ -34,7 +34,11 @@
 ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql)
 ![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r)
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript
+![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb)
+![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django)
+![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring)
+![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet)
 
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
