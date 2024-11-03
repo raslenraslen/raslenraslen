@@ -41,6 +41,9 @@
 ![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django&logoWidth=30)
 ![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring&logoWidth=30)
 ![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
+![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react&logoWidth=30)
+![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular&logoWidth=30)
+
 
 
 
