@@ -43,6 +43,9 @@
 ![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
 ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react&logoWidth=30)
 ![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular&logoWidth=30)
+![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass&logoWidth=30)
+![CSS](https://img.shields.io/badge/-CSS-000000?style=flat&logo=css3&logoWidth=30)
+
 
 
 
