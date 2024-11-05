@@ -45,6 +45,7 @@
 ![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular&logoWidth=30)
 ![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass&logoWidth=30)
 ![CSS](https://img.shields.io/badge/-CSS-000000?style=flat&logo=css3&logoWidth=30)
+![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js&logoWidth=30)
 
 
 
