@@ -48,7 +48,7 @@
 ![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js&logoWidth=30)
 
 
-<img src="https://github.com/raslenraslen/raslenraslen/blob/main/devTools.png" alt="Dev Tools" width="800" height="300">
+<img src="https://github.com/raslenraslen/raslenraslen/blob/main/devTools.png" alt="Dev Tools" width="1000" height="300">
 
 
 
