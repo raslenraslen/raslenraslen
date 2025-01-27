@@ -56,7 +56,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8&theme=dark)
 [![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
-
+[![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge)
 
 <!--
