@@ -17,38 +17,50 @@ Toujours à la recherche de nouveaux défis pour repousser mes limites et appren
 Je privilégie les projets concrets, complexes et bien structurés, avec une vision long terme. Collaboratif, rigoureux, et orienté impact.</p>
 </br>
 
-## About me 
+## About me
 
-:heart: gaming | :black_heart: bodybuilding | :blue_heart: Programming
+❤️ Gaming | 🖤 Bodybuilding | 💙 DevOps & Cloud Engineering
 
-- :earth_americas: I'm from Tunisia
-- :video_game: I like to play video games
-- :gem: I love to customize everything 
+- 🌍 From Tunisia 🇹🇳  
+- 🧠 Obsessed with building robust, automated, and secure infrastructures  
+- 🛠️ Passionate about Cloud, CI/CD, GitOps, Monitoring & DevSecOps  
+- 🎮 Gamer at heart, but I customize my setups more than I play  
+- 🚀 Always learning, always shipping  
 
 ![Visitor Count](https://profile-counter.glitch.me/{raslenraslen}/count.svg)
 
-<h3 align="left">Languages & Technologies</h3> 
+---
+
+<h3 align="left">⚙️ Languages & Technologies</h3> 
 
 ![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c&logoWidth=30)
 ![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B&logoWidth=30)
 ![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoWidth=30)
 ![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java&logoWidth=30)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript&logoWidth=30)
+![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript&logoWidth=30)
 ![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoWidth=30)
 ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql&logoWidth=30)
-![R](https://img.shields.io/badge/-R-000000?style=flat&logo=r&logoWidth=30)
-![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoWidth=30)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript&logoWidth=30)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb&logoWidth=30)
-![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django&logoWidth=30)
-![Spring](https://img.shields.io/badge/-Spring-000000?style=flat&logo=spring&logoWidth=30)
-![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
+![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js&logoWidth=30)
 ![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react&logoWidth=30)
 ![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular&logoWidth=30)
-![SCSS](https://img.shields.io/badge/-SCSS-000000?style=flat&logo=sass&logoWidth=30)
-![CSS](https://img.shields.io/badge/-CSS-000000?style=flat&logo=css3&logoWidth=30)
-![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js&logoWidth=30)
+![Spring Boot](https://img.shields.io/badge/-SpringBoot-000000?style=flat&logo=spring&logoWidth=30)
+![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django&logoWidth=30)
+![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
+![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoWidth=30)
+![Kubernetes](https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=kubernetes&logoWidth=30)
+![Terraform](https://img.shields.io/badge/-Terraform-000000?style=flat&logo=terraform&logoWidth=30)
+![Ansible](https://img.shields.io/badge/-Ansible-000000?style=flat&logo=ansible&logoWidth=30)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-000000?style=flat&logo=githubactions&logoWidth=30)
+![Grafana](https://img.shields.io/badge/-Grafana-000000?style=flat&logo=grafana&logoWidth=30)
+![Prometheus](https://img.shields.io/badge/-Prometheus-000000?style=flat&logo=prometheus&logoWidth=30)
+![Loki](https://img.shields.io/badge/-Loki-000000?style=flat&logo=loki&logoWidth=30)
+![Vault](https://img.shields.io/badge/-Vault-000000?style=flat&logo=vault&logoWidth=30)
+![ArgoCD](https://img.shields.io/badge/-ArgoCD-000000?style=flat&logo=argo&logoWidth=30)
+![Azure](https://img.shields.io/badge/-Azure-000000?style=flat&logo=microsoftazure&logoWidth=30)
 
+---
 
 <img src="https://github.com/raslenraslen/raslenraslen/blob/main/devTools.png" alt="Dev Tools" width="1050" height="200">
 
