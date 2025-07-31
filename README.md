@@ -31,36 +31,37 @@ Je privilégie les projets concrets, complexes et bien structurés, avec une vis
 
 ---
 
-<h3 align="left">⚙️ Languages & Technologies</h3> 
+<h3 align="left">⚙️ Cloud & DevOps Stack</h3> 
 
-![C](https://img.shields.io/badge/-C-000000?style=flat&logo=c&logoWidth=30)
-![C++](https://img.shields.io/badge/-C++-000000?style=flat&logo=c%2B%2B&logoWidth=30)
-![HTML5](https://img.shields.io/badge/-HTML5-000000?style=flat&logo=html5&logoWidth=30)
-![Java](https://img.shields.io/badge/-Java-000000?style=flat&logo=java&logoWidth=30)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000000?style=flat&logo=javascript&logoWidth=30)
-![TypeScript](https://img.shields.io/badge/-TypeScript-000000?style=flat&logo=typescript&logoWidth=30)
-![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoWidth=30)
-![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql&logoWidth=30)
-![MongoDB](https://img.shields.io/badge/-MongoDB-000000?style=flat&logo=mongodb&logoWidth=30)
-![Node.js](https://img.shields.io/badge/-Node.js-000000?style=flat&logo=node.js&logoWidth=30)
-![React](https://img.shields.io/badge/-React-000000?style=flat&logo=react&logoWidth=30)
-![Angular](https://img.shields.io/badge/-Angular-000000?style=flat&logo=angular&logoWidth=30)
-![Spring Boot](https://img.shields.io/badge/-SpringBoot-000000?style=flat&logo=spring&logoWidth=30)
-![Django](https://img.shields.io/badge/-Django-000000?style=flat&logo=django&logoWidth=30)
-![.NET](https://img.shields.io/badge/-.NET-000000?style=flat&logo=dotnet&logoWidth=30)
+![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux&logoWidth=30)
 ![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoWidth=30)
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=kubernetes&logoWidth=30)
 ![Terraform](https://img.shields.io/badge/-Terraform-000000?style=flat&logo=terraform&logoWidth=30)
 ![Ansible](https://img.shields.io/badge/-Ansible-000000?style=flat&logo=ansible&logoWidth=30)
-![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-000000?style=flat&logo=githubactions&logoWidth=30)
-![Grafana](https://img.shields.io/badge/-Grafana-000000?style=flat&logo=grafana&logoWidth=30)
-![Prometheus](https://img.shields.io/badge/-Prometheus-000000?style=flat&logo=prometheus&logoWidth=30)
-![Loki](https://img.shields.io/badge/-Loki-000000?style=flat&logo=loki&logoWidth=30)
 ![Vault](https://img.shields.io/badge/-Vault-000000?style=flat&logo=vault&logoWidth=30)
+![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-000000?style=flat&logo=githubactions&logoWidth=30)
+![GitLab CI](https://img.shields.io/badge/-GitLab%20CI/CD-000000?style=flat&logo=gitlab&logoWidth=30)
 ![ArgoCD](https://img.shields.io/badge/-ArgoCD-000000?style=flat&logo=argo&logoWidth=30)
+![Prometheus](https://img.shields.io/badge/-Prometheus-000000?style=flat&logo=prometheus&logoWidth=30)
+![Grafana](https://img.shields.io/badge/-Grafana-000000?style=flat&logo=grafana&logoWidth=30)
+![Loki](https://img.shields.io/badge/-Loki-000000?style=flat&logo=grafana&logoWidth=30)
+![Alertmanager](https://img.shields.io/badge/-Alertmanager-000000?style=flat&logo=prometheus&logoWidth=30)
+![Trivy](https://img.shields.io/badge/-Trivy-000000?style=flat&logo=aqua&logoWidth=30)
+![SonarQube](https://img.shields.io/badge/-SonarQube-000000?style=flat&logo=sonarqube&logoWidth=30)
 ![Azure](https://img.shields.io/badge/-Azure-000000?style=flat&logo=microsoftazure&logoWidth=30)
 
 ---
+
+<h3 align="left">🧠 Languages (DevOps-Oriented)</h3>
+
+![Bash](https://img.shields.io/badge/-Bash-000000?style=flat&logo=gnu-bash&logoWidth=30)
+![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoWidth=30)
+![YAML](https://img.shields.io/badge/-YAML-000000?style=flat&logo=yaml&logoWidth=30)
+![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql&logoWidth=30)
+
+---
+
+
 
 <img src="https://github.com/raslenraslen/raslenraslen/blob/main/devTools.png" alt="Dev Tools" width="1050" height="200">
 
