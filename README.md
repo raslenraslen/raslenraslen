@@ -12,7 +12,9 @@
    
 </p>
   
-<p>Aspiring software engineer on a quest to learn everything there is to know about the world of technology. Passionate about coding, problem-solving, and embracing new challenges. Constantly expanding my skills and knowledge to become a proficient developer. Open to collaboration and always seeking opportunities to grow. Let's build something amazing together! Some technologies I enjoy working with include JavaScript, SQL, React and Python.</p>
+<p>DevOps & Cloud Engineer passionné, en constante quête de maîtrise technique et d'excellence opérationnelle. Spécialisé dans l'automatisation, le déploiement cloud, la sécurité et l'observabilité des systèmes distribués. J’aime concevoir des pipelines CI/CD robustes, déployer des infrastructures scalables avec Terraform, orchestrer des clusters Kubernetes, intégrer GitOps avec ArgoCD et assurer une surveillance avancée avec Grafana, Prometheus, Loki et Alertmanager.
+Toujours à la recherche de nouveaux défis pour repousser mes limites et apprendre des technologies modernes (Azure, Vault, Kafka, Istio…).
+Je privilégie les projets concrets, complexes et bien structurés, avec une vision long terme. Collaboratif, rigoureux, et orienté impact.</p>
 </br>
 
 ## About me 
