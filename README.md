@@ -21,32 +21,17 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 
 ### Featured Projects
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Multi-Tenant Automation</h3>
-      <p align="center">Automated infrastructure provisioning for multiple clients — VMs, networking, K8s clusters, bastion hosts, backups</p>
-      <p align="center"><b>Ansible &bull; LXD &bull; Bash &bull; Tailscale</b></p>
-    </td>
-    <td width="50%">
-      <h3 align="center">GitOps Pipeline</h3>
-      <p align="center">Full GitOps setup with ArgoCD, automated Docker image versioning, Kubernetes manifests, and continuous deployment</p>
-      <p align="center"><b>ArgoCD &bull; Docker &bull; K8s &bull; GitHub Actions</b></p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">Monitoring Stack</h3>
-      <p align="center">Production monitoring with Prometheus, Grafana, and Loki — deployed via Docker Compose with custom dashboards</p>
-      <p align="center"><b>Prometheus &bull; Grafana &bull; Loki &bull; Docker</b></p>
-    </td>
-    <td width="50%">
-      <h3 align="center">K8s Cluster Deployer</h3>
-      <p align="center">Ansible-based automated Kubernetes cluster deployment with bastion access, container runtime setup, and network configuration</p>
-      <p align="center"><b>Ansible &bull; K8s &bull; LXD &bull; Bash</b></p>
-    </td>
-  </tr>
-</table>
+**Multi-Tenant Automation** — Automated infrastructure provisioning for multiple clients: VMs, networking, K8s clusters, bastion hosts, backups
+`Ansible` `LXD` `Bash` `Tailscale`
+
+**GitOps Pipeline** — Full GitOps setup with ArgoCD, automated Docker image versioning, Kubernetes manifests, and continuous deployment
+`ArgoCD` `Docker` `K8s` `GitHub Actions`
+
+**Monitoring Stack** — Production monitoring with Prometheus, Grafana, and Loki — deployed via Docker Compose with custom dashboards
+`Prometheus` `Grafana` `Loki` `Docker`
+
+**K8s Cluster Deployer** — Ansible-based automated Kubernetes cluster deployment with bastion access, container runtime, and network config
+`Ansible` `K8s` `LXD` `Bash`
 
 > *Some repositories are private due to client work. Reach out if you'd like to discuss any of these projects.*
 
