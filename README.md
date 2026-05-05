@@ -1,91 +1,101 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=4000&pause=1000&color=000000&center=true&vCenter=true&width=435&lines=Hi+there+%F0%9F%91%8B;I'm+Raslen" alt="Typing Animation">
-</h1> 
-
-![Mon Image](image.jpg)
- 
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=DevOps+%26+Cloud+Engineer;CI%2FCD+%7C+Kubernetes+%7C+GitOps;Building+Automated+Infrastructures" alt="Typing SVG">
+</h1>
 
 <p align="center">
-    <a href="https://twitter.com/RaslenMiss45861"><img src="https://img.shields.io/badge/twitter-%231FA1F1?style=flat&logo=twitter&logoColor=white"/></a>
-    <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/"><img src="https://img.shields.io/badge/linkedin-%230177B5?style=flat&logo=linkedin&logoColor=white"/></a>
-    
-   
+  <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="https://twitter.com/RaslenMiss45861"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
 </p>
-  
-<p>DevOps & Cloud Engineer passionné, en constante quête de maîtrise technique et d'excellence opérationnelle. Spécialisé dans l'automatisation, le déploiement cloud, la sécurité et l'observabilité des systèmes distribués. J’aime concevoir des pipelines CI/CD robustes, déployer des infrastructures scalables avec Terraform, orchestrer des clusters Kubernetes, intégrer GitOps avec ArgoCD et assurer une surveillance avancée avec Grafana, Prometheus, Loki et Alertmanager.
-Toujours à la recherche de nouveaux défis pour repousser mes limites et apprendre des technologies modernes (Azure, Vault, Kafka, Istio…).
-Je privilégie les projets concrets, complexes et bien structurés, avec une vision long terme. Collaboratif, rigoureux, et orienté impact.</p>
-</br>
-
-## About me
-
-❤️ Gaming | 🖤 Bodybuilding | 💙 DevOps & Cloud Engineering
-
-- 🌍 From Tunisia 🇹🇳  
-- 🧠 Obsessed with building robust, automated, and secure infrastructures  
-- 🛠️ Passionate about Cloud, CI/CD, GitOps, Monitoring & DevSecOps  
-- 🎮 Gamer at heart, but I customize my setups more than I play  
-- 🚀 Always learning, always shipping  
-
-![Visitor Count](https://profile-counter.glitch.me/{raslenraslen}/count.svg)
-
-----
-
-<h3 align="left">⚙️ Cloud & DevOps Stack</h3> 
-
-![Linux](https://img.shields.io/badge/-Linux-000000?style=flat&logo=linux&logoWidth=30)
-![Docker](https://img.shields.io/badge/-Docker-000000?style=flat&logo=docker&logoWidth=30)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-000000?style=flat&logo=kubernetes&logoWidth=30)
-![Terraform](https://img.shields.io/badge/-Terraform-000000?style=flat&logo=terraform&logoWidth=30)
-![Ansible](https://img.shields.io/badge/-Ansible-000000?style=flat&logo=ansible&logoWidth=30)
-![Vault](https://img.shields.io/badge/-Vault-000000?style=flat&logo=vault&logoWidth=30)
-![GitHub Actions](https://img.shields.io/badge/-GitHub%20Actions-000000?style=flat&logo=githubactions&logoWidth=30)
-![GitLab CI](https://img.shields.io/badge/-GitLab%20CI/CD-000000?style=flat&logo=gitlab&logoWidth=30)
-![ArgoCD](https://img.shields.io/badge/-ArgoCD-000000?style=flat&logo=argo&logoWidth=30)
-![Prometheus](https://img.shields.io/badge/-Prometheus-000000?style=flat&logo=prometheus&logoWidth=30)
-![Grafana](https://img.shields.io/badge/-Grafana-000000?style=flat&logo=grafana&logoWidth=30)
-![Loki](https://img.shields.io/badge/-Loki-000000?style=flat&logo=grafana&logoWidth=30)
-![Alertmanager](https://img.shields.io/badge/-Alertmanager-000000?style=flat&logo=prometheus&logoWidth=30)
-![Trivy](https://img.shields.io/badge/-Trivy-000000?style=flat&logo=aqua&logoWidth=30)
-![SonarQube](https://img.shields.io/badge/-SonarQube-000000?style=flat&logo=sonarqube&logoWidth=30)
-![Azure](https://img.shields.io/badge/-Azure-000000?style=flat&logo=microsoftazure&logoWidth=30)
 
 ---
 
-<h3 align="left">🧠 Languages (DevOps-Oriented)</h3>
+### About Me
 
-![Bash](https://img.shields.io/badge/-Bash-000000?style=flat&logo=gnu-bash&logoWidth=30)
-![Python](https://img.shields.io/badge/-Python-000000?style=flat&logo=python&logoWidth=30)
-![YAML](https://img.shields.io/badge/-YAML-000000?style=flat&logo=yaml&logoWidth=30)
-![SQL](https://img.shields.io/badge/-SQL-000000?style=flat&logo=postgresql&logoWidth=30)
+DevOps & Cloud Engineer focused on building automated, secure, and scalable infrastructures. I design CI/CD pipelines, deploy Kubernetes clusters, implement GitOps workflows, and set up production monitoring stacks.
+
+- Specialized in **CI/CD**, **Infrastructure as Code**, **GitOps**, and **Observability**
+- Experienced with **multi-tenant architectures** and **production-grade deployments**
+- Based in Tunisia
 
 ---
 
+### Featured Projects
 
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Multi-Tenant Automation</h3>
+      <p align="center">Automated infrastructure provisioning for multiple clients — VMs, networking, K8s clusters, bastion hosts, backups</p>
+      <p align="center"><b>Ansible &bull; LXD &bull; Bash &bull; Tailscale</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">GitOps Pipeline</h3>
+      <p align="center">Full GitOps setup with ArgoCD, automated Docker image versioning, Kubernetes manifests, and continuous deployment</p>
+      <p align="center"><b>ArgoCD &bull; Docker &bull; K8s &bull; GitHub Actions</b></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">Monitoring Stack</h3>
+      <p align="center">Production monitoring with Prometheus, Grafana, and Loki — deployed via Docker Compose with custom dashboards</p>
+      <p align="center"><b>Prometheus &bull; Grafana &bull; Loki &bull; Docker</b></p>
+    </td>
+    <td width="50%">
+      <h3 align="center">K8s Cluster Deployer</h3>
+      <p align="center">Ansible-based automated Kubernetes cluster deployment with bastion access, container runtime setup, and network configuration</p>
+      <p align="center"><b>Ansible &bull; K8s &bull; LXD &bull; Bash</b></p>
+    </td>
+  </tr>
+</table>
 
-<img src="https://github.com/raslenraslen/raslenraslen/blob/main/devTools.png" alt="Dev Tools" width="1050" height="200">
+> *Some repositories are private due to client work. Reach out if you'd like to discuss any of these projects.*
 
+---
 
+### Tech Stack
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=raslenraslen&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=dark)](https://github.com/raslenraslen/github-readme-stats&layout=compact)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&langs_count=8&theme=dark)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=raslenraslen&theme=dark)](https://git.io/streak-stats)
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=raslenraslen.visitor-badge)
+**Cloud & Infrastructure**
 
-<!--
-**raslenraslen/raslenraslen** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat-square&logo=terraform&logoColor=white)
+![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
 
-Here are some ideas to get you started:
+**CI/CD & GitOps**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat-square&logo=argo&logoColor=white)
 
+**Monitoring & Security**
+
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![Loki](https://img.shields.io/badge/Loki-2C3239?style=flat-square&logo=grafana&logoColor=white)
+![Vault](https://img.shields.io/badge/Vault-FFEC6E?style=flat-square&logo=vault&logoColor=black)
+![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=aqua&logoColor=white)
+![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=flat-square&logo=sonarqube&logoColor=white)
+
+**Languages**
+
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+
+---
+
+### GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=raslenraslen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
+  <img src="https://streak-stats.demolab.com/?user=raslenraslen&theme=tokyonight&hide_border=true" height="165"/>
+</p>
+
+---
+
+<p align="center">
+  <i>Open to collaboration on DevOps tooling, cloud infrastructure, and open-source projects.</i>
+</p>
