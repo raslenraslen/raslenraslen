@@ -1,10 +1,13 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=DevOps+%26+Cloud+Engineer;CI%2FCD+%7C+Kubernetes+%7C+GitOps;Automating+Infrastructures" alt="Typing SVG">
-</h1>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:1f6feb,100:36BCF7&height=180&section=header&text=Missaoui%20Raslen&fontColor=ffffff&fontSize=36&fontAlignY=35&animation=fadeIn" />
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=DevOps+%26+Cloud+Engineer;CI%2FCD+%7C+Kubernetes+%7C+GitOps;Automating+Infrastructures" alt="Typing SVG">
+</p>
 
 <p align="center">
   <a href="https://www.linkedin.com/in/missaoui-raslen-6a8620298/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://twitter.com/RaslenMiss45861"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+  <img src="https://komarev.com/ghpvc/?username=raslenraslen&style=for-the-badge&color=1a1b27&label=PROFILE+VIEWS" />
 </p>
 
 ---
@@ -52,7 +55,7 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:1f6feb,100:36BCF7&height=80&section=footer" />
 
 ### Trophies
 
@@ -95,6 +98,18 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 
 ---
 
+### Spotify
+
 <p align="center">
-  <i>Open to collaboration on DevOps tooling, cloud infrastructure, and open-source projects.</i>
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31j7s2u6siyfjpmaf6sbrv3q5m6a&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false" alt="Spotify Now Playing" />
+  </a>
 </p>
+
+---
+
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:1f6feb,100:36BCF7&height=120&section=footer" />
