@@ -19,24 +19,6 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 
 ---
 
-### Featured Projects
-
-**Multi-Tenant Automation** — Automated infrastructure provisioning for multiple clients: VMs, networking, K8s clusters, bastion hosts, backups
-`Ansible` `LXD` `Bash` `Tailscale`
-
-**GitOps Pipeline** — Full GitOps setup with ArgoCD, automated Docker image versioning, Kubernetes manifests, and continuous deployment
-`ArgoCD` `Docker` `K8s` `GitHub Actions`
-
-**Monitoring Stack** — Production monitoring with Prometheus, Grafana, and Loki — deployed via Docker Compose with custom dashboards
-`Prometheus` `Grafana` `Loki` `Docker`
-
-**K8s Cluster Deployer** — Ansible-based automated Kubernetes cluster deployment with bastion access, container runtime, and network config
-`Ansible` `K8s` `LXD` `Bash`
-
-> *Some repositories are private due to client work. Reach out if you'd like to discuss any of these projects.*
-
----
-
 ### Tech Stack
 
 **Cloud & Infrastructure**
@@ -72,11 +54,43 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 
 ---
 
+### Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=raslenraslen&theme=tokyonight&no-frame=true&column=7" />
+</p>
+
+---
+
 ### GitHub Stats
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=raslenraslen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
   <img src="https://streak-stats.demolab.com/?user=raslenraslen&theme=tokyonight&hide_border=true" height="165"/>
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+</p>
+
+---
+
+### Activity Graph
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=raslenraslen&theme=tokyo-night&hide_border=true" />
+</p>
+
+---
+
+### Contribution Snake
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/raslenraslen/raslenraslen/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/raslenraslen/raslenraslen/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/raslenraslen/raslenraslen/output/github-snake.svg" />
+  </picture>
 </p>
 
 ---
