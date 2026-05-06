@@ -68,12 +68,12 @@ DevOps & Cloud Engineer focused on building automated, secure, and scalable infr
 ### GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=raslenraslen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=raslenraslen&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165"/>
   <img src="https://streak-stats.demolab.com/?user=raslenraslen&theme=tokyonight&hide_border=true" height="165"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
+  <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=raslenraslen&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 </p>
 
 ---
