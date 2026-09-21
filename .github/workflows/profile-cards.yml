@@ -1,0 +1,34 @@
+name: Generate Profile Cards
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  push:
+    branches: [main]
+    # Without this, a run that pushes cards with a PAT would re-trigger itself.
+    # (The built-in GITHUB_TOKEN never re-triggers, but a PAT would.)
+    paths-ignore:
+      - 'profile-summary-card-output/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-cards
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          # Falls back to the built-in token, so no PAT setup is required.
+          # Add a SUMMARY_GITHUB_TOKEN secret to also count private contributions.
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          THEME: tokyonight
+          UTC_OFFSET: 1
