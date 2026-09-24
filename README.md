@@ -63,12 +63,16 @@ mindset:   Automate it, secure it, then make it observable
 
 <p align="center">
   <img src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub stats" />
-  <img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive time" />
+  <img src="./profile-summary-card-output/tokyonight/5-rank.svg" alt="GitHub rank" />
 </p>
 
 <p align="center">
   <img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" alt="Languages by repo" />
   <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Languages by commit" />
+</p>
+
+<p align="center">
+  <img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" alt="Productive time" />
 </p>
 
 <p align="center">
