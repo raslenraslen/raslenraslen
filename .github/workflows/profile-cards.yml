@@ -35,6 +35,12 @@ jobs:
           # On pousse nous-mêmes, après avoir recolorié les cartes.
           AUTO_PUSH: false
 
+      - name: Generate rank card
+        env:
+          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
+          RANK_LOGIN: ${{ github.repository_owner }}
+        run: python3 .github/scripts/generate-rank-card.py
+
       - name: Recolor language charts to the Tokyo Night palette
         run: python3 .github/scripts/recolor-cards.py
 
