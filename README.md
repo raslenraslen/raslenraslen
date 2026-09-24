@@ -72,7 +72,7 @@ mindset:   Automate it, secure it, then make it observable
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=raslenraslen&theme=tokyonight&hide_border=true" alt="Streak" />
+  <img src="https://streak-stats.demolab.com/?user=raslenraslen&hide_border=true&background=1a1b27&stroke=414868&ring=7aa2f7&fire=ff9e64&currStreakNum=c0caf5&sideNums=c0caf5&currStreakLabel=7aa2f7&sideLabels=a9b1d6&dates=565f89" alt="Streak" />
 </p>
 
 ---
