@@ -6,9 +6,9 @@
 <g transform="translate(258,112)">
   <circle r="38" fill="none" stroke="#565f89" stroke-width="6" stroke-opacity="0.35"/>
   <circle r="38" fill="none" stroke="#70a5fd" stroke-width="6" stroke-linecap="round"
-          stroke-dasharray="238.76" stroke-dashoffset="91.34"
+          stroke-dasharray="238.76" stroke-dashoffset="91.11"
           transform="rotate(-90)"/>
   <text text-anchor="middle" y="10" font-size="30" font-weight="700" fill="#bf91f3">B+</text>
 </g>
-<text x="258" y="178" text-anchor="middle" font-size="12" fill="#565f89">top 38.3%</text>
+<text x="258" y="178" text-anchor="middle" font-size="12" fill="#565f89">top 38.2%</text>
 </svg>
