@@ -24,8 +24,12 @@ LOGIN = os.environ.get("STATS_LOGIN", "raslenraslen")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 OUT = pathlib.Path(__file__).resolve().parents[2] / "stats"
 
-# Du markup, pas des langages : ils écraseraient la carte (vieux projets web).
-EXCLUDED_LANGUAGES = {"HTML", "CSS", "SCSS", "Roff"}
+# Liste blanche : la carte ne montre que l'outillage infra / DevOps / sécurité,
+# pas les langages des anciens projets de dev (HTML, Java, JavaScript...).
+INFRA_LANGUAGES = {
+    "Shell", "Dockerfile", "HCL", "Jinja", "Python", "Go", "Makefile",
+    "YAML", "PowerShell", "Open Policy Agent", "Nix", "Starlark", "Smarty",
+}
 
 BG, BORDER, GRID = "#0d1117", "#30363d", "#21262d"
 TITLE, TEXT, MUTED = "#e6edf3", "#c9d1d9", "#8b949e"
@@ -111,7 +115,7 @@ def fetch():
         lang["name"]
         for repo in repos["nodes"]
         for lang in repo["languages"]["nodes"]
-        if lang["name"] not in EXCLUDED_LANGUAGES
+        if lang["name"] in INFRA_LANGUAGES
     )
     calendar = user["contributionsCollection"]["contributionCalendar"]
     # Le calendrier de l'année en cours court jusqu'au 31 décembre : on coupe à
