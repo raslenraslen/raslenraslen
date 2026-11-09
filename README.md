@@ -32,12 +32,12 @@ mindset:   Automate it, secure it, then make it observable
 
 | Project | What it does | Stack |
 |---|---|---|
-| 🔒 **Production operator upgrades** | Upgraded 7 operators on a production cluster (10 nodes, 46 apps), fixing critical CVEs | `Kubernetes` `Argo CD` `Helm` |
-| 🔒 **MicroCloud disaster recovery** | Replication between two clusters, failover and failback tested | `MicroCloud` `LXD` `MAAS` |
-| 🔒 **MicroCloud automation** | Automated cluster deployment with Ansible, safe to re-run | `Ansible` `MicroCeph` `MicroOVN` |
-| 🔒 **Kubernetes security audit** | CI gate that blocks merges on critical findings | `Trivy` `Kubescape` `Polaris` |
-| 🔒 **Observability platform** | Metrics, logs, traces and alerting, with a runbook per alert | `Prometheus` `Grafana` `Tempo` |
-| 🔒 **GitOps migration** | From CI push deploys to Argo CD pull | `Argo CD` `GitOps` |
+| 🔒 **Production operator upgrades** | Upgraded 7 operators on a production cluster (10 nodes, 46 apps), fixing critical CVEs | ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white) ![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white) |
+| 🔒 **MicroCloud disaster recovery** | Replication between two clusters, failover and failback tested | ![MicroCloud](https://img.shields.io/badge/MicroCloud-E95420?style=flat-square&logo=canonical&logoColor=white) ![LXD](https://img.shields.io/badge/LXD-E95420?style=flat-square&logo=canonical&logoColor=white) ![MAAS](https://img.shields.io/badge/MAAS-E95420?style=flat-square&logo=canonical&logoColor=white) |
+| 🔒 **MicroCloud automation** | Automated cluster deployment with Ansible, safe to re-run | ![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat-square&logo=ansible&logoColor=white) ![MicroCeph](https://img.shields.io/badge/MicroCeph-EF5C55?style=flat-square&logo=ceph&logoColor=white) ![MicroOVN](https://img.shields.io/badge/MicroOVN-E95420?style=flat-square&logo=canonical&logoColor=white) |
+| 🔒 **Kubernetes security audit** | CI gate that blocks merges on critical findings | ![Trivy](https://img.shields.io/badge/Trivy-1904DA?style=flat-square&logo=trivy&logoColor=white) ![Kubescape](https://img.shields.io/badge/Kubescape-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![Polaris](https://img.shields.io/badge/Polaris-326CE5?style=flat-square&logo=kubernetes&logoColor=white) |
+| 🔒 **Observability platform** | Metrics, logs, traces and alerting, with a runbook per alert | ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Tempo](https://img.shields.io/badge/Tempo-F46800?style=flat-square&logo=grafana&logoColor=white) |
+| 🔒 **GitOps migration** | From CI push deploys to Argo CD pull | ![Argo CD](https://img.shields.io/badge/Argo_CD-EF7B4D?style=flat-square&logo=argo&logoColor=white) ![GitOps](https://img.shields.io/badge/GitOps-F05032?style=flat-square&logo=git&logoColor=white) |
 
 #### Open source
 
