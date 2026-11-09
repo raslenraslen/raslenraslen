@@ -67,7 +67,7 @@ mindset:   Automate it, secure it, then make it observable
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=raslenraslen&card_width=840&border_radius=10&disable_animations=true&background=0d1117&border=30363d&stroke=30363d&ring=1f6feb&fire=36bcf7&currStreakNum=e6edf3&sideNums=e6edf3&currStreakLabel=36bcf7&sideLabels=8b949e&dates=8b949e" alt="Streak" />
+  <img src="./stats/streak.svg" alt="Contribution streak" />
 </p>
 
 ---

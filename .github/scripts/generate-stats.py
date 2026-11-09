@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """Génère les cartes de la section « GitHub Stats » du README.
 
-Trois SVG statiques, même palette que la bannière (bleu #1f6feb -> #36BCF7
+Quatre SVG statiques, même palette que la bannière (bleu #1f6feb -> #36BCF7
 sur le fond GitHub dark) :
 
   stats/overview.svg   chiffres clés + courbe des contributions sur 12 mois
   stats/languages.svg  langages par nombre de repos
   stats/rank.svg       rang façon github-readme-stats (S / A+ / ... / C)
+  stats/streak.svg     total, série en cours et plus longue série
 
 Tout vient de l'API GraphQL de GitHub : aucun service tiers au rendu.
 """
@@ -80,16 +81,17 @@ def fetch():
     )["user"]
 
     # L'API plafonne contributionsCollection à un an : on cumule année par année.
-    # all_time suit le calendrier du profil (même total que GitHub et la carte streak) ;
-    # commits ne sert qu'au calcul du rang.
-    commits = reviews = all_time = 0
+    # history = calendrier jour par jour depuis l'inscription : il donne le total
+    # (le même que le profil GitHub) et les séries. commits ne sert qu'au rang.
+    commits = reviews = 0
+    history = {}
     for year in range(int(user["createdAt"][:4]), dt.date.today().year + 1):
         try:
             block = graphql(
                 """
                 query($login:String!,$from:DateTime!,$to:DateTime!){
                   user(login:$login){contributionsCollection(from:$from,to:$to){
-                    contributionCalendar{totalContributions}
+                    contributionCalendar{weeks{contributionDays{date contributionCount}}}
                     totalCommitContributions
                     restrictedContributionsCount
                     totalPullRequestReviewContributions}}}""",
@@ -100,7 +102,9 @@ def fetch():
             break
         commits += block["totalCommitContributions"] + block["restrictedContributionsCount"]
         reviews += block["totalPullRequestReviewContributions"]
-        all_time += block["contributionCalendar"]["totalContributions"]
+        for week in block["contributionCalendar"]["weeks"]:
+            for day in week["contributionDays"]:
+                history[day["date"]] = day["contributionCount"]
 
     repos = user["repositories"]
     languages = Counter(
@@ -110,9 +114,15 @@ def fetch():
         if lang["name"] not in EXCLUDED_LANGUAGES
     )
     calendar = user["contributionsCollection"]["contributionCalendar"]
+    # Le calendrier de l'année en cours court jusqu'au 31 décembre : on coupe à
+    # aujourd'hui, au sens de GitHub (dernier jour du calendrier glissant).
+    today = calendar["weeks"][-1]["contributionDays"][-1]["date"]
+    history = {day: count for day, count in history.items() if day <= today}
     return {
         "commits": commits,
-        "all_time": all_time,
+        "all_time": sum(history.values()),
+        "history": sorted(history.items()),
+        "joined": user["createdAt"][:10],
         "reviews": reviews,
         "prs": user["pullRequests"]["totalCount"],
         "issues": user["openIssues"]["totalCount"] + user["closedIssues"]["totalCount"],
@@ -336,12 +346,81 @@ def render_rank(s):
     return card(width, height, "Rank", "", lines + ring)
 
 
+def streaks(history):
+    """(longueur, début, fin) de la série en cours et de la plus longue.
+
+    Comme sur GitHub, un jour sans contribution aujourd'hui ne casse pas encore
+    la série : elle reste « en cours » jusqu'à la fin de la journée.
+    """
+    longest = run = (0, None, None)
+    for day, count in history:
+        run = (run[0] + 1, run[1] or day, day) if count else (0, None, None)
+        if run[0] > longest[0]:
+            longest = run
+    end = len(history) - 1
+    if history and history[end][1] == 0:
+        end -= 1
+    start = end
+    while start >= 0 and history[start][1]:
+        start -= 1
+    current = (end - start, history[start + 1][0], history[end][0]) if end > start else (0, None, None)
+    return current, longest
+
+
+def date_range(start, end, this_year):
+    """« Aug 9 - Oct 3 », avec l'année seulement quand ce n'est pas l'année en cours."""
+    def label(day):
+        d = dt.date.fromisoformat(day)
+        return f"{d:%b} {d.day}" + ("" if d.year == this_year else f", {d.year}")
+    if start is None:
+        return "—"
+    return label(start) if start == end else f"{label(start)} - {label(end)}"
+
+
+def render_streak(s):
+    width, height = 840, 240
+    this_year = dt.date.fromisoformat(s["history"][-1][0]).year
+    current, longest = streaks(s["history"])
+    joined = dt.date.fromisoformat(s["joined"])
+    col = (width - 56) / 3
+    left_x, mid_x, right_x = (28 + col * (k + 0.5) for k in range(3))
+
+    def stat(x, value, label, detail):
+        return (
+            f'<text x="{x:.0f}" y="133" font-size="30" font-weight="600" fill="{TITLE}" text-anchor="middle">{value}</text>'
+            f'<text x="{x:.0f}" y="190" font-size="13" fill="{TEXT}" text-anchor="middle">{label}</text>'
+            f'<text x="{x:.0f}" y="210" font-size="12" fill="{MUTED}" text-anchor="middle">{detail}</text>'
+        )
+
+    dividers = "".join(
+        f'<line x1="{28 + col * k:.0f}" y1="70" x2="{28 + col * k:.0f}" y2="210" stroke="{BORDER}"/>' for k in (1, 2)
+    )
+    # Série en cours : anneau + flamme, comme la carte streak d'origine.
+    ring = (
+        f'<circle cx="{mid_x:.0f}" cy="122" r="40" fill="none" stroke="url(#accent)" stroke-width="5"/>'
+        f'<rect x="{mid_x - 12:.0f}" y="74" width="24" height="14" fill="{BG}"/>'
+        f'<path transform="translate({mid_x:.0f},80)" fill="{CYAN}" d="M0,-10 C5,-5 8,-1 8,3 C8,8 4,11 0,11 '
+        f'C-4,11 -8,8 -8,3 C-8,-1 -4,-3 -2,-7 C-1,-4 0,-2 2,-1 C2,-4 1,-7 0,-10 Z"/>'
+        f'<text x="{mid_x:.0f}" y="133" font-size="30" font-weight="600" fill="{TITLE}" text-anchor="middle">{current[0]}</text>'
+        f'<text x="{mid_x:.0f}" y="190" font-size="13" font-weight="600" fill="{CYAN}" text-anchor="middle">Current streak</text>'
+        f'<text x="{mid_x:.0f}" y="210" font-size="12" fill="{MUTED}" text-anchor="middle">'
+        f'{date_range(current[1], current[2], this_year)}</text>'
+    )
+    body = (
+        dividers
+        + stat(left_x, f'{s["all_time"]:,}', "Total contributions", f"{joined:%b} {joined.day}, {joined.year} - Present")
+        + ring
+        + stat(right_x, longest[0], "Longest streak", date_range(longest[1], longest[2], this_year))
+    )
+    return card(width, height, "Contribution streak", "", body)
+
+
 def main():
     if not TOKEN:
         raise SystemExit("GITHUB_TOKEN manquant")
     stats = fetch()
     OUT.mkdir(exist_ok=True)
-    for name, render in (("overview", render_overview), ("languages", render_languages), ("rank", render_rank)):
+    for name, render in (("overview", render_overview), ("languages", render_languages), ("rank", render_rank), ("streak", render_streak)):
         (OUT / f"{name}.svg").write_text(render(stats), encoding="utf-8")
         print(f"  écrit  stats/{name}.svg")
 
