@@ -52,9 +52,9 @@
     },
     {
       "title": "OPA Gatekeeper guardrails",
-      "description": "Policy as code on Kubernetes with Gatekeeper constraint templates.",
+      "description": "Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject.",
       "stack": ["OPA", "Kubernetes"],
-      "url": "https://github.com/raslenraslen/k8s-opa-gatekeeper"
+      "url": "https://github.com/raslenraslen/opa-gatekeeper-lab"
     },
     {
       "title": "MetalLB configuration",
