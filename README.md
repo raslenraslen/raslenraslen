@@ -53,7 +53,7 @@ mindset:   Automate it, secure it, then make it observable
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/kubernetes-ingress-tls-mastery"><img src="./stats/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: End-to-end ingress and TLS on Azure, with MetalLB and automated certificate issuance." /></a>
+  <a href="https://github.com/raslenraslen/k8s-ingress-tls-lab"><img src="./stats/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: From NodePort to Let's Encrypt on AKS: Ingress, MetalLB and TLS in six documented stages." /></a>
   <a href="https://github.com/raslenraslen/opa-gatekeeper-lab"><img src="./stats/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject." /></a>
 </p>
 

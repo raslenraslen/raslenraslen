@@ -46,9 +46,9 @@
     },
     {
       "title": "Kubernetes ingress and TLS",
-      "description": "End-to-end ingress and TLS on Azure, with MetalLB and automated certificate issuance.",
+      "description": "From NodePort to Let's Encrypt on AKS: Ingress, MetalLB and TLS in six documented stages.",
       "stack": ["Azure", "Ingress", "TLS"],
-      "url": "https://github.com/raslenraslen/kubernetes-ingress-tls-mastery"
+      "url": "https://github.com/raslenraslen/k8s-ingress-tls-lab"
     },
     {
       "title": "OPA Gatekeeper guardrails",
