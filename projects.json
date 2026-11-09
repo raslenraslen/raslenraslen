@@ -39,10 +39,10 @@
       "url": "https://github.com/raslenraslen/ansible-kubeadm-cluster"
     },
     {
-      "title": "DevSecOps Ansible platform",
-      "description": "Runtime security for Kubernetes with Falco threat detection and OPA Gatekeeper policies.",
+      "title": "Kubernetes security stack",
+      "description": "Five security layers for Kubernetes: Gatekeeper, Falco, Polaris, Trivy and Vault, as Ansible roles.",
       "stack": ["Ansible", "Falco", "OPA"],
-      "url": "https://github.com/raslenraslen/devsecops-ansible-platforme"
+      "url": "https://github.com/raslenraslen/ansible-k8s-security-stack"
     },
     {
       "title": "Kubernetes ingress and TLS",
