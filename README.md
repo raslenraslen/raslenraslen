@@ -101,6 +101,16 @@ mindset:   Automate it, secure it, then make it observable
 
 ---
 
+### Spotify
+
+<p align="center">
+  <a href="https://github.com/kittinan/spotify-github-profile">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31j7s2u6siyfjpmaf6sbrv3q5m6a&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false&hide_remaster=false" alt="Spotify Now Playing" />
+  </a>
+</p>
+
+---
+
 <p align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
 </p>
