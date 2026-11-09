@@ -377,7 +377,7 @@ def date_range(start, end, this_year):
         d = dt.date.fromisoformat(day)
         return f"{d:%b} {d.day}" + ("" if d.year == this_year else f", {d.year}")
     if start is None:
-        return "—"
+        return "No active streak"
     return label(start) if start == end else f"{label(start)} - {label(end)}"
 
 
