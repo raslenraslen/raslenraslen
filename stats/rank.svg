@@ -9,12 +9,12 @@
 <rect x="28" y="26" width="3" height="16" rx="1.5" fill="url(#accent)"/>
 <text x="40" y="39" font-size="15" font-weight="600" fill="#e6edf3">Rank</text>
 <text x="390" y="39" font-size="12" fill="#8b949e" text-anchor="end"></text>
-<text x="28" y="84" font-size="13" fill="#c9d1d9">Stars earned</text><text x="200" y="84" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">37</text><text x="28" y="114" font-size="13" fill="#c9d1d9">Followers</text><text x="200" y="114" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">67</text><text x="28" y="144" font-size="13" fill="#c9d1d9">Issues</text><text x="200" y="144" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">43</text><text x="28" y="174" font-size="13" fill="#c9d1d9">Contributed to</text><text x="200" y="174" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">21</text>
+<text x="28" y="84" font-size="13" fill="#c9d1d9">Stars earned</text><text x="200" y="84" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">9</text><text x="28" y="114" font-size="13" fill="#c9d1d9">Followers</text><text x="200" y="114" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">67</text><text x="28" y="144" font-size="13" fill="#c9d1d9">Issues</text><text x="200" y="144" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">43</text><text x="28" y="174" font-size="13" fill="#c9d1d9">Contributed to</text><text x="200" y="174" font-size="13" font-weight="600" fill="#e6edf3" text-anchor="end">21</text>
 <g transform="translate(318,124)">
   <circle r="50" fill="none" stroke="#21262d" stroke-width="8"/>
   <circle r="50" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"
-          stroke-dasharray="314.16" stroke-dashoffset="103.39" transform="rotate(-90)"/>
-  <text y="11" font-size="32" font-weight="700" fill="#e6edf3" text-anchor="middle">A-</text>
+          stroke-dasharray="314.16" stroke-dashoffset="131.62" transform="rotate(-90)"/>
+  <text y="11" font-size="32" font-weight="700" fill="#e6edf3" text-anchor="middle">B+</text>
 </g>
-<text x="318" y="206" font-size="12" fill="#8b949e" text-anchor="middle">top 32.9% on GitHub</text>
+<text x="318" y="206" font-size="12" fill="#8b949e" text-anchor="middle">top 41.9% on GitHub</text>
 </svg>
