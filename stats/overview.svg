@@ -9,7 +9,7 @@
 <rect x="28" y="26" width="3" height="16" rx="1.5" fill="url(#accent)"/>
 <text x="40" y="39" font-size="15" font-weight="600" fill="#e6edf3">GitHub activity</text>
 <text x="812" y="39" font-size="12" fill="#8b949e" text-anchor="end">contributions per week · last 12 months</text>
-<text x="28" y="94" font-size="28" font-weight="600" fill="#e6edf3">4.8k</text><text x="28" y="116" font-size="12" fill="#8b949e">Contributions · all time</text><text x="224" y="94" font-size="28" font-weight="600" fill="#e6edf3">2.7k</text><text x="224" y="116" font-size="12" fill="#8b949e">Last 12 months</text><text x="420" y="94" font-size="28" font-weight="600" fill="#e6edf3">217</text><text x="420" y="116" font-size="12" fill="#8b949e">Pull requests</text><text x="616" y="94" font-size="28" font-weight="600" fill="#e6edf3">31</text><text x="616" y="116" font-size="12" fill="#8b949e">Public repositories</text>
+<text x="28" y="94" font-size="28" font-weight="600" fill="#e6edf3">5,230</text><text x="28" y="116" font-size="12" fill="#8b949e">Contributions · all time</text><text x="224" y="94" font-size="28" font-weight="600" fill="#e6edf3">2,735</text><text x="224" y="116" font-size="12" fill="#8b949e">Last 12 months</text><text x="420" y="94" font-size="28" font-weight="600" fill="#e6edf3">217</text><text x="420" y="116" font-size="12" fill="#8b949e">Pull requests</text><text x="616" y="94" font-size="28" font-weight="600" fill="#e6edf3">31</text><text x="616" y="116" font-size="12" fill="#8b949e">Public repositories</text>
 <defs>
   <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#1f6feb" stop-opacity="0.45"/><stop offset="1" stop-color="#1f6feb" stop-opacity="0"/>

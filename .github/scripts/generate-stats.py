@@ -80,13 +80,16 @@ def fetch():
     )["user"]
 
     # L'API plafonne contributionsCollection à un an : on cumule année par année.
-    commits = reviews = 0
+    # all_time suit le calendrier du profil (même total que GitHub et la carte streak) ;
+    # commits ne sert qu'au calcul du rang.
+    commits = reviews = all_time = 0
     for year in range(int(user["createdAt"][:4]), dt.date.today().year + 1):
         try:
             block = graphql(
                 """
                 query($login:String!,$from:DateTime!,$to:DateTime!){
                   user(login:$login){contributionsCollection(from:$from,to:$to){
+                    contributionCalendar{totalContributions}
                     totalCommitContributions
                     restrictedContributionsCount
                     totalPullRequestReviewContributions}}}""",
@@ -97,6 +100,7 @@ def fetch():
             break
         commits += block["totalCommitContributions"] + block["restrictedContributionsCount"]
         reviews += block["totalPullRequestReviewContributions"]
+        all_time += block["contributionCalendar"]["totalContributions"]
 
     repos = user["repositories"]
     languages = Counter(
@@ -108,6 +112,7 @@ def fetch():
     calendar = user["contributionsCollection"]["contributionCalendar"]
     return {
         "commits": commits,
+        "all_time": all_time,
         "reviews": reviews,
         "prs": user["pullRequests"]["totalCount"],
         "issues": user["openIssues"]["totalCount"] + user["closedIssues"]["totalCount"],
@@ -194,9 +199,8 @@ def smooth_path(points):
 def render_overview(s):
     width, height = 840, 356
     kpis = [
-        # restrictedContributionsCount compte toutes les contributions privées, pas que des commits.
-        (human(s["commits"]), "Contributions · all time"),
-        (human(s["year_total"]), "Last 12 months"),
+        (f'{s["all_time"]:,}', "Contributions · all time"),
+        (f'{s["year_total"]:,}', "Last 12 months"),
         (human(s["prs"]), "Pull requests"),
         (human(s["public_repos"]), "Public repositories"),
     ]
