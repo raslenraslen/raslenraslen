@@ -8,7 +8,7 @@ on:
     # Without this, a run that pushes cards with a PAT would re-trigger itself.
     # (The built-in GITHUB_TOKEN never re-triggers, but a PAT would.)
     paths-ignore:
-      - 'profile-summary-card-output/**'
+      - 'stats/**'
   workflow_dispatch:
 
 permissions:
@@ -21,33 +21,18 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
-      - name: Generate summary cards
-        uses: vn7n24fzkq/github-profile-summary-cards@09ba4dde3f9b05828cb99553561db3f4ff07703f # release @ 2026-08-06
+      - name: Generate stats cards
         env:
           # Falls back to the built-in token, so no PAT setup is required.
           # Add a SUMMARY_GITHUB_TOKEN secret to also count private contributions.
           GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: ${{ github.repository_owner }}
-          BRANCH_NAME: main
-          THEME: tokyonight
-          UTC_OFFSET: 1
-          # On pousse nous-mêmes, après avoir recolorié les cartes.
-          AUTO_PUSH: false
-
-      - name: Generate rank card
-        env:
-          GITHUB_TOKEN: ${{ secrets.SUMMARY_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
-          RANK_LOGIN: ${{ github.repository_owner }}
-        run: python3 .github/scripts/generate-rank-card.py
-
-      - name: Recolor language charts to the Tokyo Night palette
-        run: python3 .github/scripts/recolor-cards.py
+          STATS_LOGIN: ${{ github.repository_owner }}
+        run: python3 .github/scripts/generate-stats.py
 
       - name: Commit cards
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-summary-card-output
-          git diff --staged --quiet || git commit -m "Generate profile summary cards"
+          git add stats
+          git diff --staged --quiet || git commit -m "Update stats cards"
           git push
