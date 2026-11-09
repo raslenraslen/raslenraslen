@@ -29,16 +29,15 @@ mindset:   Automate it, secure it, then make it observable
 ### Featured Work
 
 #### Recent work
-<sub>🔒 Client and internal projects in private repositories, so no public links.</sub>
 
 | Project | What it does | Stack |
 |---|---|---|
-| 🔒 **Production operator upgrades** | Upgraded the operators of a **production Kubernetes 1.31 cluster** (10 nodes, 46 Argo CD apps) one by one, closing **critical CVEs**: Sealed Secrets, cert-manager, External Secrets, external-dns, Argo Workflows, Reloader, VictoriaLogs. Impact review before each change, verification after | `Kubernetes` `Argo CD` `Helm` |
-| 🔒 **MicroCloud disaster recovery** | Two MicroCloud 3.4 LTS clusters provisioned from **MAAS**, LXD replicators between them, **failover and failback tested** end to end | `MicroCloud` `LXD` `MAAS` |
-| 🔒 **MicroCloud automation** | Deploys a MicroCloud cluster (LXD, **MicroCeph**, **MicroOVN**) with Ansible: preflight checks, pinned snaps, preseed, health verification. Idempotent, safe to re-run | `Ansible` `MicroCeph` `MicroOVN` |
-| 🔒 **Kubernetes security audit pipeline** | CI gate scanning manifests with **Trivy, Kubescape and Polaris**: one aggregated HTML report, SARIF to the GitHub Security tab, **fails the build on critical findings** | `GitHub Actions` `Trivy` `Python` |
-| 🔒 **Observability platform** | Prometheus, Grafana, Loki, Tempo and Mimir; zero-code **eBPF tracing** with Alloy + Beyla; Grafana alerting to Telegram with **one runbook per alert** | `Grafana` `Prometheus` `Tempo` |
-| 🔒 **GitOps migration** | Moved application delivery from CI push to **Argo CD pull**, with GitHub SSO on Argo CD and automated image updates | `Argo CD` `GitOps` |
+| 🔒 **Production operator upgrades** | Upgraded 7 operators on a production cluster (10 nodes, 46 apps), fixing critical CVEs | `Kubernetes` `Argo CD` `Helm` |
+| 🔒 **MicroCloud disaster recovery** | Replication between two clusters, failover and failback tested | `MicroCloud` `LXD` `MAAS` |
+| 🔒 **MicroCloud automation** | Automated cluster deployment with Ansible, safe to re-run | `Ansible` `MicroCeph` `MicroOVN` |
+| 🔒 **Kubernetes security audit** | CI gate that blocks merges on critical findings | `Trivy` `Kubescape` `Polaris` |
+| 🔒 **Observability platform** | Metrics, logs, traces and alerting, with a runbook per alert | `Prometheus` `Grafana` `Tempo` |
+| 🔒 **GitOps migration** | From CI push deploys to Argo CD pull | `Argo CD` `GitOps` |
 
 #### Open source
 
