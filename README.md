@@ -103,7 +103,7 @@ mindset:   Automate it, secure it, then make it observable
 ---
 
 <p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="Dev Quote" />
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&backgroundColor=161b22&quoteColor=c9d1d9&authorColor=36bcf7&symbolColor=1f6feb" alt="Dev Quote" />
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:1f6feb,100:36BCF7&height=120&section=footer" />

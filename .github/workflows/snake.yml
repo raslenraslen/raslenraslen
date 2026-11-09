@@ -18,7 +18,7 @@ jobs:
           github_user_name: raslenraslen
           outputs: |
             dist/github-snake.svg
-            dist/github-snake-dark.svg?color_snake=#bb9af7&color_dots=#23243a,#2e4a6d,#3d6aa3,#5a8fd6,#7aa2f7
+            dist/github-snake-dark.svg?color_snake=#36bcf7&color_dots=#161b22,#0e3a6e,#1a56b0,#1f6feb,#58a6ff
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@df5cc2bfa78282ded844b354faee141f06b41865 # v4
