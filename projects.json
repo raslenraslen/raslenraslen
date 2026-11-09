@@ -1,38 +1,78 @@
-[
-  {
-    "title": "Production operator upgrades",
-    "description": "Upgraded 7 operators on a production Kubernetes cluster (10 nodes, 46 apps), fixing critical CVEs.",
-    "stack": ["Kubernetes", "Argo CD", "Helm"],
-    "private": true
-  },
-  {
-    "title": "MicroCloud disaster recovery",
-    "description": "Replication between two MicroCloud clusters, with failover and failback tested end to end.",
-    "stack": ["MicroCloud", "LXD", "MAAS"],
-    "private": true
-  },
-  {
-    "title": "MicroCloud automation",
-    "description": "Automated MicroCloud cluster deployment with Ansible, idempotent and safe to re-run.",
-    "stack": ["Ansible", "MicroCeph", "MicroOVN"],
-    "private": true
-  },
-  {
-    "title": "Kubernetes security audit",
-    "description": "CI gate that scans every manifest and blocks the merge on critical findings.",
-    "stack": ["Trivy", "Kubescape", "Polaris"],
-    "private": true
-  },
-  {
-    "title": "Observability platform",
-    "description": "Metrics, logs, traces and alerting, with a runbook for every alert.",
-    "stack": ["Prometheus", "Grafana", "Tempo"],
-    "private": true
-  },
-  {
-    "title": "GitOps migration",
-    "description": "Moved application delivery from CI push deploys to Argo CD pull, with SSO.",
-    "stack": ["Argo CD", "GitOps"],
-    "private": true
-  }
-]
+{
+  "recent": [
+    {
+      "title": "Production operator upgrades",
+      "description": "Upgraded 7 operators on a production Kubernetes cluster (10 nodes, 46 apps), fixing critical CVEs.",
+      "stack": ["Kubernetes", "Argo CD", "Helm"]
+    },
+    {
+      "title": "MicroCloud disaster recovery",
+      "description": "Replication between two MicroCloud clusters, with failover and failback tested end to end.",
+      "stack": ["MicroCloud", "LXD", "MAAS"]
+    },
+    {
+      "title": "MicroCloud automation",
+      "description": "Automated MicroCloud cluster deployment with Ansible, idempotent and safe to re-run.",
+      "stack": ["Ansible", "MicroCeph", "MicroOVN"]
+    },
+    {
+      "title": "Kubernetes security audit",
+      "description": "CI gate that scans every manifest and blocks the merge on critical findings.",
+      "stack": ["Trivy", "Kubescape", "Polaris"]
+    },
+    {
+      "title": "Observability platform",
+      "description": "Metrics, logs, traces and alerting, with a runbook for every alert.",
+      "stack": ["Prometheus", "Grafana", "Tempo"]
+    },
+    {
+      "title": "GitOps migration",
+      "description": "Moved application delivery from CI push deploys to Argo CD pull, with SSO.",
+      "stack": ["Argo CD", "GitOps"]
+    }
+  ],
+  "open_source": [
+    {
+      "title": "Kubernetes Ansible roles",
+      "description": "Bootstraps a multi-node Kubernetes cluster from scratch, with scaling and reset playbooks.",
+      "stack": ["Ansible", "Kubernetes"],
+      "url": "https://github.com/raslenraslen/kubernetes-ansible-roles"
+    },
+    {
+      "title": "DevSecOps Ansible platform",
+      "description": "Runtime security for Kubernetes with Falco threat detection and OPA Gatekeeper policies.",
+      "stack": ["Ansible", "Falco", "OPA"],
+      "url": "https://github.com/raslenraslen/devsecops-ansible-platforme"
+    },
+    {
+      "title": "Kubernetes ingress and TLS",
+      "description": "End-to-end ingress and TLS on Azure, with MetalLB and automated certificate issuance.",
+      "stack": ["Azure", "Ingress", "TLS"],
+      "url": "https://github.com/raslenraslen/kubernetes-ingress-tls-mastery"
+    },
+    {
+      "title": "OPA Gatekeeper guardrails",
+      "description": "Policy as code on Kubernetes with Gatekeeper constraint templates.",
+      "stack": ["OPA", "Kubernetes"],
+      "url": "https://github.com/raslenraslen/k8s-opa-gatekeeper"
+    },
+    {
+      "title": "MetalLB configuration",
+      "description": "Bare-metal load balancing with IPAddressPool and L2Advertisement, built with Ansible.",
+      "stack": ["MetalLB", "Ansible"],
+      "url": "https://github.com/raslenraslen/MetalLB-Configuration"
+    },
+    {
+      "title": "OpenStack private cloud",
+      "description": "Private cloud on OpenStack: controller, compute and storage services.",
+      "stack": ["OpenStack", "Shell"],
+      "url": "https://github.com/raslenraslen/projet-openstack"
+    },
+    {
+      "title": "Kubernetes management CLI",
+      "description": "Interactive CLI that makes day-to-day Kubernetes operations faster and less error-prone.",
+      "stack": ["Shell", "kubectl"],
+      "url": "https://github.com/raslenraslen/kubernetes_managmenet_script"
+    }
+  ]
+}

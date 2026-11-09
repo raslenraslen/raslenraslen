@@ -47,15 +47,24 @@ mindset:   Automate it, secure it, then make it observable
 
 #### Open source
 
-| Project | What it does | Stack |
-|---|---|---|
-| **[kubernetes-ansible-roles](https://github.com/raslenraslen/kubernetes-ansible-roles)** | Bootstraps a multi-node Kubernetes cluster from scratch: master/worker roles, templated join tokens, node-scaling and cluster-reset playbooks | `Ansible` `Kubernetes` |
-| **[devsecops-ansible-platforme](https://github.com/raslenraslen/devsecops-ansible-platforme)** | Runtime security platform for K8s, fully automated: **Falco** threat detection + **OPA Gatekeeper** policy enforcement, packaged as reusable roles | `Ansible` `Falco` `OPA` |
-| **[kubernetes-ingress-tls-mastery](https://github.com/raslenraslen/kubernetes-ingress-tls-mastery)** | End-to-end ingress & TLS on **Azure**: MetalLB, SAN certificate generation, production ingress manifests with automated cert issuance | `Azure` `Ingress` `TLS` |
-| **[k8s-opa-gatekeeper](https://github.com/raslenraslen/k8s-opa-gatekeeper)** | Policy-as-code guardrails on Kubernetes: Gatekeeper constraint templates layered on an Ansible-provisioned cluster | `OPA` `Kubernetes` |
-| **[MetalLB-Configuration](https://github.com/raslenraslen/MetalLB-Configuration)** | Bare-metal load balancing: `IPAddressPool` + `L2Advertisement` config, shipped with the full Ansible cluster build | `MetalLB` `Ansible` |
-| **[projet-openstack](https://github.com/raslenraslen/projet-openstack)** | Private cloud infrastructure built on **OpenStack**: Controller, Compute and Storage service configuration | `OpenStack` `Shell` |
-| **[kubernetes_managmenet_script](https://github.com/raslenraslen/kubernetes_managmenet_script)** | Interactive CLI tooling that makes day-to-day Kubernetes operations faster and less error-prone | `Shell` `kubectl` |
+<p align="center">
+  <a href="https://github.com/raslenraslen/kubernetes-ansible-roles"><img src="./stats/projects/kubernetes-ansible-roles.svg" alt="Kubernetes Ansible roles: Bootstraps a multi-node Kubernetes cluster from scratch, with scaling and reset playbooks." /></a>
+  <a href="https://github.com/raslenraslen/devsecops-ansible-platforme"><img src="./stats/projects/devsecops-ansible-platform.svg" alt="DevSecOps Ansible platform: Runtime security for Kubernetes with Falco threat detection and OPA Gatekeeper policies." /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/raslenraslen/kubernetes-ingress-tls-mastery"><img src="./stats/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: End-to-end ingress and TLS on Azure, with MetalLB and automated certificate issuance." /></a>
+  <a href="https://github.com/raslenraslen/k8s-opa-gatekeeper"><img src="./stats/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Policy as code on Kubernetes with Gatekeeper constraint templates." /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/raslenraslen/MetalLB-Configuration"><img src="./stats/projects/metallb-configuration.svg" alt="MetalLB configuration: Bare-metal load balancing with IPAddressPool and L2Advertisement, built with Ansible." /></a>
+  <a href="https://github.com/raslenraslen/projet-openstack"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Private cloud on OpenStack: controller, compute and storage services." /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/raslenraslen/kubernetes_managmenet_script"><img src="./stats/projects/kubernetes-management-cli.svg" alt="Kubernetes management CLI: Interactive CLI that makes day-to-day Kubernetes operations faster and less error-prone." /></a>
+</p>
 
 ---
 

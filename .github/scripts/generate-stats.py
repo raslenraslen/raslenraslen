@@ -442,15 +442,25 @@ def slugify(title):
 
 def render_project(project):
     width, height = 418, 176
-    body = ""
-    if project.get("private"):
-        # cadenas : dépôt privé, pas de lien
-        body += (
-            f'<g transform="translate({width - 40},26)" fill="none" stroke="{MUTED}" stroke-width="1.5">'
-            f'<rect x="0.75" y="6.75" width="10.5" height="8.5" rx="2"/><path d="M3 7V4.5a3 3 0 0 1 6 0V7"/></g>'
-        )
-    # ~6.6 px par caractère à 13 px : 52 caractères tiennent dans la carte
-    for i, line in enumerate(wrap(project["description"], 52)[:3]):
+    # Avec url : dépôt public, flèche « ouvrir » (le README rend la carte cliquable).
+    # Sans url : dépôt privé, cadenas.
+    icon = (
+        '<path d="M5 2H2.5A1.5 1.5 0 0 0 1 3.5v9A1.5 1.5 0 0 0 2.5 14h9a1.5 1.5 0 0 0 1.5-1.5V10"/>'
+        '<path d="M9 1h5v5M14 1 7 8"/>'
+        if project.get("url")
+        else '<rect x="0.75" y="6.75" width="10.5" height="8.5" rx="2"/><path d="M3 7V4.5a3 3 0 0 1 6 0V7"/>'
+    )
+    body = (
+        f'<g transform="translate({width - 42},25)" fill="none" stroke="{MUTED}" stroke-width="1.5" '
+        f'stroke-linecap="round" stroke-linejoin="round">{icon}</g>'
+    )
+    # ~6.6 px par caractère à 13 px : 52 caractères par ligne, 2 lignes au-dessus des pastilles
+    lines = wrap(project["description"], 52)
+    if len(lines) > 2:
+        print(f"  attention : description trop longue, coupée  ({project['title']})")
+        lines = lines[:2]
+        lines[-1] = lines[-1].rstrip(".,") + "…"
+    for i, line in enumerate(lines):
         body += f'<text x="28" y="{78 + i * 21}" font-size="13" fill="{TEXT}">{escape(line)}</text>'
     x = 28
     for tool in project["stack"]:
@@ -476,7 +486,8 @@ def main():
     projects_dir.mkdir(exist_ok=True)
     for old in projects_dir.glob("*.svg"):  # un projet retiré de projects.json disparaît
         old.unlink()
-    for project in json.loads(PROJECTS.read_text(encoding="utf-8")):
+    sections = json.loads(PROJECTS.read_text(encoding="utf-8"))
+    for project in sections["recent"] + sections["open_source"]:
         name = slugify(project["title"])
         (projects_dir / f"{name}.svg").write_text(render_project(project), encoding="utf-8")
         print(f"  écrit  stats/projects/{name}.svg")
