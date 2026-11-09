@@ -118,6 +118,7 @@ def fetch():
         "repos_with_language": sum(1 for r in repos["nodes"] if r["languages"]["nodes"]),
         "languages": languages,
         "year_total": calendar["totalContributions"],
+        "days": [(d["date"], d["contributionCount"]) for w in calendar["weeks"] for d in w["contributionDays"]],
         # La semaine en cours est incomplète : elle ferait plonger la courbe à la fin.
         "weeks": [
             (w["contributionDays"][0]["date"], sum(d["contributionCount"] for d in w["contributionDays"]))
@@ -191,7 +192,7 @@ def smooth_path(points):
 
 
 def render_overview(s):
-    width, height = 840, 300
+    width, height = 840, 356
     kpis = [
         # restrictedContributionsCount compte toutes les contributions privées, pas que des commits.
         (human(s["commits"]), "Contributions · all time"),
@@ -211,7 +212,7 @@ def render_overview(s):
     tick = nice_step(peak)
     y_max = tick * math.ceil(peak / tick)
 
-    left, right, top, bottom = 64, width - 28, 168, 262
+    left, right, top, bottom = 70, width - 28, 172, 292
     step = (right - left) / (len(weeks) - 1)
     y_of = lambda count: bottom - count / y_max * (bottom - top)  # noqa: E731
     points = [(left + i * step, y_of(c)) for i, (_, c) in enumerate(weeks)]
@@ -219,29 +220,41 @@ def render_overview(s):
     area = f"{line} L{right},{bottom} L{left},{bottom} Z"
 
     # Axe vertical : graduations « rondes » (0, 50, 100...) avec leur valeur.
-    y_axis = "".join(
-        f'<line x1="{left}" y1="{y_of(v):.1f}" x2="{right}" y2="{y_of(v):.1f}" stroke="{GRID}" stroke-dasharray="3 4"/>'
-        f'<text x="{left - 10}" y="{y_of(v) + 4:.1f}" font-size="11" fill="{MUTED}" text-anchor="end">{v:g}</text>'
-        for v in [tick * k for k in range(1, int(y_max / tick) + 1)]
-    ) + (
-        f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="{BORDER}"/>'
-        f'<text x="{left - 10}" y="{bottom + 4}" font-size="11" fill="{MUTED}" text-anchor="end">0</text>'
-    )
+    y_axis = f'<text x="{left - 12}" y="{top - 16}" font-size="11" fill="{MUTED}" text-anchor="end">per week</text>'
+    for v in [tick * k for k in range(int(y_max / tick) + 1)]:
+        if v:
+            y_axis += f'<line x1="{left}" y1="{y_of(v):.1f}" x2="{right}" y2="{y_of(v):.1f}" stroke="{GRID}" stroke-dasharray="3 4"/>'
+        y_axis += f'<text x="{left - 12}" y="{y_of(v) + 4:.1f}" font-size="12" fill="{TEXT}" text-anchor="end">{v:g}</text>'
+    y_axis += f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="{BORDER}"/>'
 
-    # Axe horizontal : un repère au premier lundi de chaque mois.
-    months, last_month = [], None
+    # Axe horizontal : chaque mois centré sur ses semaines, avec son total exact.
+    totals = Counter()
+    for day, count in s["days"]:
+        totals[day[:7]] += count
+    starts = []
     for i, (day, _) in enumerate(weeks):
-        if day[:7] != last_month:
-            last_month = day[:7]
-            months.append((left + i * step, dt.date.fromisoformat(day).strftime("%b")))
-    # le premier mois est souvent partiel : on l'enlève s'il colle au suivant
-    if len(months) > 1 and months[1][0] - months[0][0] < 30:
-        months.pop(0)
-    x_axis = "".join(
-        f'<line x1="{x:.1f}" y1="{bottom}" x2="{x:.1f}" y2="{bottom + 4}" stroke="{BORDER}"/>'
-        f'<text x="{min(x, right - 12):.1f}" y="{bottom + 18}" font-size="11" fill="{MUTED}" text-anchor="middle">{name}</text>'
-        for x, name in months
-    )
+        if not starts or starts[-1][1] != day[:7]:
+            starts.append((i, day[:7]))
+    # le premier mois n'est couvert qu'en partie : son total serait trompeur
+    if len(starts) > 1 and weeks[0][0][8:] > "07":
+        starts.pop(0)
+    centers = [
+        left + (i + (starts[k + 1][0] if k + 1 < len(starts) else len(weeks) - 1)) / 2 * step
+        for k, (i, _) in enumerate(starts)
+    ]
+    # Le mois en cours ne couvre qu'une semaine ou deux : on écarte les libellés
+    # de droite à gauche pour qu'ils ne se chevauchent pas.
+    centers[-1] = min(centers[-1], right - 14)
+    for k in range(len(centers) - 2, -1, -1):
+        centers[k] = min(centers[k], centers[k + 1] - 44)
+    x_axis = f'<text x="{left - 12}" y="{bottom + 40}" font-size="11" fill="{MUTED}" text-anchor="end">total</text>'
+    for (i, month), x in zip(starts, centers):
+        name = dt.date.fromisoformat(f"{month}-01").strftime("%b")
+        x_axis += (
+            f'<line x1="{left + i * step:.1f}" y1="{bottom}" x2="{left + i * step:.1f}" y2="{bottom + 5}" stroke="{BORDER}"/>'
+            f'<text x="{x:.1f}" y="{bottom + 21}" font-size="12" fill="{TEXT}" text-anchor="middle">{name}</text>'
+            f'<text x="{x:.1f}" y="{bottom + 40}" font-size="12" font-weight="600" fill="{TITLE}" text-anchor="middle">{totals[month]}</text>'
+        )
 
     # Meilleure semaine : point + valeur exacte.
     best = max(range(len(weeks)), key=lambda i: weeks[i][1])
