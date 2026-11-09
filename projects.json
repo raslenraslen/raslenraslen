@@ -34,7 +34,7 @@
   "open_source": [
     {
       "title": "Kubernetes Ansible roles",
-      "description": "Bootstraps a multi-node Kubernetes cluster from scratch, with scaling and reset playbooks.",
+      "description": "Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it.",
       "stack": ["Ansible", "Kubernetes"],
       "url": "https://github.com/raslenraslen/kubernetes-ansible-roles"
     },
