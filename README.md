@@ -48,7 +48,7 @@ mindset:   Automate it, secure it, then make it observable
 #### Open source
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/kubernetes-ansible-roles"><img src="./stats/projects/kubernetes-ansible-roles.svg" alt="Kubernetes Ansible roles: Bootstraps a multi-node Kubernetes cluster from scratch, with scaling and reset playbooks." /></a>
+  <a href="https://github.com/raslenraslen/ansible-kubeadm-cluster"><img src="./stats/projects/kubeadm-cluster-with-ansible.svg" alt="Kubeadm cluster with Ansible: Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it." /></a>
   <a href="https://github.com/raslenraslen/devsecops-ansible-platforme"><img src="./stats/projects/devsecops-ansible-platform.svg" alt="DevSecOps Ansible platform: Runtime security for Kubernetes with Falco threat detection and OPA Gatekeeper policies." /></a>
 </p>
 

@@ -33,10 +33,10 @@
   ],
   "open_source": [
     {
-      "title": "Kubernetes Ansible roles",
+      "title": "Kubeadm cluster with Ansible",
       "description": "Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it.",
       "stack": ["Ansible", "Kubernetes"],
-      "url": "https://github.com/raslenraslen/kubernetes-ansible-roles"
+      "url": "https://github.com/raslenraslen/ansible-kubeadm-cluster"
     },
     {
       "title": "DevSecOps Ansible platform",
