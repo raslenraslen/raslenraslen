@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Production operator upgrades",
+    "description": "Upgraded 7 operators on a production Kubernetes cluster (10 nodes, 46 apps), fixing critical CVEs.",
+    "stack": ["Kubernetes", "Argo CD", "Helm"],
+    "private": true
+  },
+  {
+    "title": "MicroCloud disaster recovery",
+    "description": "Replication between two MicroCloud clusters, with failover and failback tested end to end.",
+    "stack": ["MicroCloud", "LXD", "MAAS"],
+    "private": true
+  },
+  {
+    "title": "MicroCloud automation",
+    "description": "Automated MicroCloud cluster deployment with Ansible, idempotent and safe to re-run.",
+    "stack": ["Ansible", "MicroCeph", "MicroOVN"],
+    "private": true
+  },
+  {
+    "title": "Kubernetes security audit",
+    "description": "CI gate that scans every manifest and blocks the merge on critical findings.",
+    "stack": ["Trivy", "Kubescape", "Polaris"],
+    "private": true
+  },
+  {
+    "title": "Observability platform",
+    "description": "Metrics, logs, traces and alerting, with a runbook for every alert.",
+    "stack": ["Prometheus", "Grafana", "Tempo"],
+    "private": true
+  },
+  {
+    "title": "GitOps migration",
+    "description": "Moved application delivery from CI push deploys to Argo CD pull, with SSO.",
+    "stack": ["Argo CD", "GitOps"],
+    "private": true
+  }
+]

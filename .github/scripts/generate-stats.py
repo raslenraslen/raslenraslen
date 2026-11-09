@@ -10,6 +10,9 @@ sur le fond GitHub dark) :
   stats/streak.svg     total, série en cours et plus longue série
 
 Tout vient de l'API GraphQL de GitHub : aucun service tiers au rendu.
+
+Plus une carte par projet de projects.json (section « Featured Work ») dans
+stats/projects/, avec le même style.
 """
 import datetime as dt
 import json
@@ -19,10 +22,13 @@ import pathlib
 import urllib.error
 import urllib.request
 from collections import Counter
+from html import escape
 
 LOGIN = os.environ.get("STATS_LOGIN", "raslenraslen")
 TOKEN = os.environ.get("GITHUB_TOKEN")
-OUT = pathlib.Path(__file__).resolve().parents[2] / "stats"
+ROOT = pathlib.Path(__file__).resolve().parents[2]
+OUT = ROOT / "stats"
+PROJECTS = ROOT / "projects.json"
 
 # Liste blanche : la carte ne montre que l'outillage infra / DevOps / sécurité,
 # pas les langages des anciens projets de dev (HTML, Java, JavaScript...).
@@ -419,6 +425,44 @@ def render_streak(s):
     return card(width, height, "Contribution streak", "", body)
 
 
+def wrap(text, max_chars):
+    lines, line = [], ""
+    for word in text.split():
+        if line and len(line) + 1 + len(word) > max_chars:
+            lines.append(line)
+            line = word
+        else:
+            line = f"{line} {word}".strip()
+    return lines + [line] if line else lines
+
+
+def slugify(title):
+    return "-".join("".join(c if c.isalnum() else " " for c in title.lower()).split())
+
+
+def render_project(project):
+    width, height = 418, 176
+    body = ""
+    if project.get("private"):
+        # cadenas : dépôt privé, pas de lien
+        body += (
+            f'<g transform="translate({width - 40},26)" fill="none" stroke="{MUTED}" stroke-width="1.5">'
+            f'<rect x="0.75" y="6.75" width="10.5" height="8.5" rx="2"/><path d="M3 7V4.5a3 3 0 0 1 6 0V7"/></g>'
+        )
+    # ~6.6 px par caractère à 13 px : 52 caractères tiennent dans la carte
+    for i, line in enumerate(wrap(project["description"], 52)[:3]):
+        body += f'<text x="28" y="{78 + i * 21}" font-size="13" fill="{TEXT}">{escape(line)}</text>'
+    x = 28
+    for tool in project["stack"]:
+        pill = len(tool) * 6.6 + 18
+        body += (
+            f'<rect x="{x:.1f}" y="{height - 44}" width="{pill:.1f}" height="22" rx="11" fill="{GRID}" stroke="{BORDER}"/>'
+            f'<text x="{x + pill / 2:.1f}" y="{height - 29}" font-size="11.5" fill="{CYAN}" text-anchor="middle">{escape(tool)}</text>'
+        )
+        x += pill + 8
+    return card(width, height, escape(project["title"]), "", body)
+
+
 def main():
     if not TOKEN:
         raise SystemExit("GITHUB_TOKEN manquant")
@@ -427,6 +471,15 @@ def main():
     for name, render in (("overview", render_overview), ("languages", render_languages), ("rank", render_rank), ("streak", render_streak)):
         (OUT / f"{name}.svg").write_text(render(stats), encoding="utf-8")
         print(f"  écrit  stats/{name}.svg")
+
+    projects_dir = OUT / "projects"
+    projects_dir.mkdir(exist_ok=True)
+    for old in projects_dir.glob("*.svg"):  # un projet retiré de projects.json disparaît
+        old.unlink()
+    for project in json.loads(PROJECTS.read_text(encoding="utf-8")):
+        name = slugify(project["title"])
+        (projects_dir / f"{name}.svg").write_text(render_project(project), encoding="utf-8")
+        print(f"  écrit  stats/projects/{name}.svg")
 
 
 if __name__ == "__main__":
