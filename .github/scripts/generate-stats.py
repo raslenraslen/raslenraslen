@@ -166,6 +166,16 @@ def card(width, height, title, subtitle, body):
 '''
 
 
+def nice_step(peak):
+    """Pas d'axe lisible (1, 2, 5, 10, 20, 25, 50... ) : 3 à 5 graduations, au plus près du pic."""
+    magnitude = 10 ** max(0, math.floor(math.log10(peak)) - 1) if peak > 0 else 1
+    candidates = [m * magnitude for m in (1, 2, 2.5, 5, 10, 20, 25, 50, 100) if (m * magnitude) % 1 == 0]
+    fitting = [c for c in candidates if 3 <= math.ceil(peak / c) <= 5]
+    if not fitting:  # pic minuscule : une graduation par unité
+        return 1
+    return min(fitting, key=lambda c: (c * math.ceil(peak / c), -c))
+
+
 def smooth_path(points):
     """Courbe Catmull-Rom -> Bézier ; les points de contrôle restent sous la ligne de base."""
     floor = max(y for _, y in points)
@@ -181,7 +191,7 @@ def smooth_path(points):
 
 
 def render_overview(s):
-    width, height = 840, 280
+    width, height = 840, 300
     kpis = [
         # restrictedContributionsCount compte toutes les contributions privées, pas que des commits.
         (human(s["commits"]), "Contributions · all time"),
@@ -196,30 +206,54 @@ def render_overview(s):
         for i, (value, label) in enumerate(kpis)
     )
 
-    left, right, top, bottom = 28, width - 28, 150, 240
     weeks = s["weeks"]
     peak = max(c for _, c in weeks) or 1
+    tick = nice_step(peak)
+    y_max = tick * math.ceil(peak / tick)
+
+    left, right, top, bottom = 64, width - 28, 168, 262
     step = (right - left) / (len(weeks) - 1)
-    points = [(left + i * step, bottom - c / peak * (bottom - top)) for i, (_, c) in enumerate(weeks)]
+    y_of = lambda count: bottom - count / y_max * (bottom - top)  # noqa: E731
+    points = [(left + i * step, y_of(c)) for i, (_, c) in enumerate(weeks)]
     line = smooth_path(points)
     area = f"{line} L{right},{bottom} L{left},{bottom} Z"
 
-    grid = "".join(
-        f'<line x1="{left}" y1="{y:.1f}" x2="{right}" y2="{y:.1f}" stroke="{GRID}" stroke-dasharray="3 4"/>'
-        for y in (top, (top + bottom) / 2)
-    ) + f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="{BORDER}"/>'
+    # Axe vertical : graduations « rondes » (0, 50, 100...) avec leur valeur.
+    y_axis = "".join(
+        f'<line x1="{left}" y1="{y_of(v):.1f}" x2="{right}" y2="{y_of(v):.1f}" stroke="{GRID}" stroke-dasharray="3 4"/>'
+        f'<text x="{left - 10}" y="{y_of(v) + 4:.1f}" font-size="11" fill="{MUTED}" text-anchor="end">{v:g}</text>'
+        for v in [tick * k for k in range(1, int(y_max / tick) + 1)]
+    ) + (
+        f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="{BORDER}"/>'
+        f'<text x="{left - 10}" y="{bottom + 4}" font-size="11" fill="{MUTED}" text-anchor="end">0</text>'
+    )
 
+    # Axe horizontal : un repère au premier lundi de chaque mois.
     months, last_month = [], None
     for i, (day, _) in enumerate(weeks):
-        month = day[:7]
-        if month != last_month:
-            last_month = month
+        if day[:7] != last_month:
+            last_month = day[:7]
             months.append((left + i * step, dt.date.fromisoformat(day).strftime("%b")))
     # le premier mois est souvent partiel : on l'enlève s'il colle au suivant
     if len(months) > 1 and months[1][0] - months[0][0] < 30:
         months.pop(0)
-    labels = "".join(
-        f'<text x="{x:.1f}" y="{bottom + 20}" font-size="11" fill="{MUTED}">{name}</text>' for x, name in months
+    x_axis = "".join(
+        f'<line x1="{x:.1f}" y1="{bottom}" x2="{x:.1f}" y2="{bottom + 4}" stroke="{BORDER}"/>'
+        f'<text x="{min(x, right - 12):.1f}" y="{bottom + 18}" font-size="11" fill="{MUTED}" text-anchor="middle">{name}</text>'
+        for x, name in months
+    )
+
+    # Meilleure semaine : point + valeur exacte.
+    best = max(range(len(weeks)), key=lambda i: weeks[i][1])
+    bx, by = points[best]
+    best_day = dt.date.fromisoformat(weeks[best][0])
+    anchor = "end" if bx > right - 120 else "middle"
+    marker = (
+        f'<line x1="{bx:.1f}" y1="{by:.1f}" x2="{bx:.1f}" y2="{bottom}" stroke="{CYAN}" stroke-opacity="0.35" stroke-dasharray="2 3"/>'
+        f'<circle cx="{bx:.1f}" cy="{by:.1f}" r="4.5" fill="{CYAN}" stroke="{BG}" stroke-width="2"/>'
+        f'<text x="{bx - (8 if anchor == "end" else 0):.1f}" y="{by - 10:.1f}" font-size="12" text-anchor="{anchor}">'
+        f'<tspan font-weight="600" fill="{TITLE}">{weeks[best][1]}</tspan>'
+        f'<tspan fill="{MUTED}"> · week of {best_day:%b} {best_day.day}</tspan></text>'
     )
 
     body += f'''
@@ -228,10 +262,11 @@ def render_overview(s):
     <stop offset="0" stop-color="{BLUE}" stop-opacity="0.45"/><stop offset="1" stop-color="{BLUE}" stop-opacity="0"/>
   </linearGradient>
 </defs>
-{grid}
+{y_axis}
 <path d="{area}" fill="url(#fill)"/>
 <path d="{line}" fill="none" stroke="url(#accent)" stroke-width="2.2" stroke-linejoin="round"/>
-{labels}'''
+{x_axis}
+{marker}'''
     return card(width, height, "GitHub activity", "contributions per week · last 12 months", body)
 
 
