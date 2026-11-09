@@ -58,9 +58,9 @@
     },
     {
       "title": "MetalLB configuration",
-      "description": "Bare-metal load balancing with IPAddressPool and L2Advertisement, built with Ansible.",
+      "description": "LoadBalancer Services on bare metal with MetalLB in Layer 2, with install and test scripts.",
       "stack": ["MetalLB", "Ansible"],
-      "url": "https://github.com/raslenraslen/MetalLB-Configuration"
+      "url": "https://github.com/raslenraslen/metallb-lab"
     },
     {
       "title": "OpenStack private cloud",

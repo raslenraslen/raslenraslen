@@ -58,7 +58,7 @@ mindset:   Automate it, secure it, then make it observable
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/MetalLB-Configuration"><img src="./stats/projects/metallb-configuration.svg" alt="MetalLB configuration: Bare-metal load balancing with IPAddressPool and L2Advertisement, built with Ansible." /></a>
+  <a href="https://github.com/raslenraslen/metallb-lab"><img src="./stats/projects/metallb-configuration.svg" alt="MetalLB configuration: LoadBalancer Services on bare metal with MetalLB in Layer 2, with install and test scripts." /></a>
   <a href="https://github.com/raslenraslen/projet-openstack"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Private cloud on OpenStack: controller, compute and storage services." /></a>
 </p>
 
