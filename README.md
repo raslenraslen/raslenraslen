@@ -62,10 +62,6 @@ mindset:   Automate it, secure it, then make it observable
   <a href="https://github.com/raslenraslen/projet-openstack"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Private cloud on OpenStack: controller, compute and storage services." /></a>
 </p>
 
-<p align="center">
-  <a href="https://github.com/raslenraslen/kubernetes_managmenet_script"><img src="./stats/projects/kubernetes-management-cli.svg" alt="Kubernetes management CLI: Interactive CLI that makes day-to-day Kubernetes operations faster and less error-prone." /></a>
-</p>
-
 ---
 
 ### Tech Stack

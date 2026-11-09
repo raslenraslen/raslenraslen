@@ -67,12 +67,6 @@
       "description": "Private cloud on OpenStack: controller, compute and storage services.",
       "stack": ["OpenStack", "Shell"],
       "url": "https://github.com/raslenraslen/projet-openstack"
-    },
-    {
-      "title": "Kubernetes management CLI",
-      "description": "Interactive CLI that makes day-to-day Kubernetes operations faster and less error-prone.",
-      "stack": ["Shell", "kubectl"],
-      "url": "https://github.com/raslenraslen/kubernetes_managmenet_script"
     }
   ]
 }
