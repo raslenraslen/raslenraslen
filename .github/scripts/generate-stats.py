@@ -40,6 +40,8 @@ INFRA_LANGUAGES = {
 BG, BORDER, GRID = "#0d1117", "#30363d", "#21262d"
 TITLE, TEXT, MUTED = "#e6edf3", "#c9d1d9", "#8b949e"
 BLUE, CYAN = "#1f6feb", "#36bcf7"
+# Accent des projets open source : le vert GitHub, pour les distinguer des projets privés.
+GREEN_DARK, GREEN = "#238636", "#3fb950"
 SHADES = ["#36bcf7", "#2fa4f2", "#2a8cec", "#1f6feb", "#2f5fc4", "#3b5299"]
 FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif"
 
@@ -175,11 +177,11 @@ def human(n):
     return f"{n / 1000:.1f}k".replace(".0k", "k") if n >= 1000 else f"{n}"
 
 
-def card(width, height, title, subtitle, body):
+def card(width, height, title, subtitle, body, accent=(BLUE, CYAN)):
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">
 <defs>
   <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="{BLUE}"/><stop offset="1" stop-color="{CYAN}"/>
+    <stop offset="0" stop-color="{accent[0]}"/><stop offset="1" stop-color="{accent[1]}"/>
   </linearGradient>
 </defs>
 <style>text {{ font-family: {FONT} }}</style>
@@ -442,6 +444,7 @@ def slugify(title):
 
 def render_project(project):
     width, height = 418, 176
+    accent = (GREEN_DARK, GREEN) if project.get("url") else (BLUE, CYAN)
     # Avec url : dépôt public, flèche « ouvrir » (le README rend la carte cliquable).
     # Sans url : dépôt privé, cadenas.
     icon = (
@@ -467,10 +470,10 @@ def render_project(project):
         pill = len(tool) * 6.6 + 18
         body += (
             f'<rect x="{x:.1f}" y="{height - 44}" width="{pill:.1f}" height="22" rx="11" fill="{GRID}" stroke="{BORDER}"/>'
-            f'<text x="{x + pill / 2:.1f}" y="{height - 29}" font-size="11.5" fill="{CYAN}" text-anchor="middle">{escape(tool)}</text>'
+            f'<text x="{x + pill / 2:.1f}" y="{height - 29}" font-size="11.5" fill="{accent[1]}" text-anchor="middle">{escape(tool)}</text>'
         )
         x += pill + 8
-    return card(width, height, escape(project["title"]), "", body)
+    return card(width, height, escape(project["title"]), "", body, accent)
 
 
 def main():
