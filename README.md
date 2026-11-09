@@ -72,14 +72,6 @@ mindset:   Automate it, secure it, then make it observable
 
 ---
 
-### Trophies
-
-<p align="center">
-  <img src="https://github-trophies.vercel.app/?username=raslenraslen&theme=tokyonight&no-frame=true&column=7" />
-</p>
-
----
-
 ### Contribution Snake
 
 <p align="center">
