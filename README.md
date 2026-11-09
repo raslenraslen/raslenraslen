@@ -28,9 +28,23 @@ mindset:   Automate it, secure it, then make it observable
 
 ### Featured Work
 
+#### Recent work
+<sub>🔒 Client and internal projects in private repositories, so no public links.</sub>
+
 | Project | What it does | Stack |
 |---|---|---|
-| **[kubernetes-ansible-roles](https://github.com/raslenraslen/kubernetes-ansible-roles)** | Bootstraps a multi-node Kubernetes **v1.28** cluster from scratch — master/worker roles, templated join tokens, node-scaling and cluster-reset playbooks | `Ansible` `Kubernetes` |
+| 🔒 **Production operator upgrades** | Upgraded the operators of a **production Kubernetes 1.31 cluster** (10 nodes, 46 Argo CD apps) one by one, closing **critical CVEs**: Sealed Secrets, cert-manager, External Secrets, external-dns, Argo Workflows, Reloader, VictoriaLogs. Impact review before each change, verification after | `Kubernetes` `Argo CD` `Helm` |
+| 🔒 **MicroCloud disaster recovery** | Two MicroCloud 3.4 LTS clusters provisioned from **MAAS**, LXD replicators between them, **failover and failback tested** end to end | `MicroCloud` `LXD` `MAAS` |
+| 🔒 **MicroCloud automation** | Deploys a MicroCloud cluster (LXD, **MicroCeph**, **MicroOVN**) with Ansible: preflight checks, pinned snaps, preseed, health verification. Idempotent, safe to re-run | `Ansible` `MicroCeph` `MicroOVN` |
+| 🔒 **Kubernetes security audit pipeline** | CI gate scanning manifests with **Trivy, Kubescape and Polaris**: one aggregated HTML report, SARIF to the GitHub Security tab, **fails the build on critical findings** | `GitHub Actions` `Trivy` `Python` |
+| 🔒 **Observability platform** | Prometheus, Grafana, Loki, Tempo and Mimir; zero-code **eBPF tracing** with Alloy + Beyla; Grafana alerting to Telegram with **one runbook per alert** | `Grafana` `Prometheus` `Tempo` |
+| 🔒 **GitOps migration** | Moved application delivery from CI push to **Argo CD pull**, with GitHub SSO on Argo CD and automated image updates | `Argo CD` `GitOps` |
+
+#### Open source
+
+| Project | What it does | Stack |
+|---|---|---|
+| **[kubernetes-ansible-roles](https://github.com/raslenraslen/kubernetes-ansible-roles)** | Bootstraps a multi-node Kubernetes cluster from scratch — master/worker roles, templated join tokens, node-scaling and cluster-reset playbooks | `Ansible` `Kubernetes` |
 | **[devsecops-ansible-platforme](https://github.com/raslenraslen/devsecops-ansible-platforme)** | Runtime security platform for K8s, fully automated — **Falco** threat detection + **OPA Gatekeeper** policy enforcement, packaged as reusable roles | `Ansible` `Falco` `OPA` |
 | **[kubernetes-ingress-tls-mastery](https://github.com/raslenraslen/kubernetes-ingress-tls-mastery)** | End-to-end ingress & TLS on **Azure** — MetalLB, SAN certificate generation, production ingress manifests with automated cert issuance | `Azure` `Ingress` `TLS` |
 | **[k8s-opa-gatekeeper](https://github.com/raslenraslen/k8s-opa-gatekeeper)** | Policy-as-code guardrails on Kubernetes — Gatekeeper constraint templates layered on an Ansible-provisioned cluster | `OPA` `Kubernetes` |
