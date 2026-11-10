@@ -48,17 +48,21 @@ mindset:   Automate it, secure it, then make it observable
 #### Open source
 
 <p align="center">
+  <a href="https://github.com/raslenraslen/cloudforge-devops"><img src="./stats/projects/cloudforge-ci-cd-platform.svg" alt="CloudForge CI/CD platform: Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes." /></a>
   <a href="https://github.com/raslenraslen/ansible-kubeadm-cluster"><img src="./stats/projects/kubeadm-cluster-with-ansible.svg" alt="Kubeadm cluster with Ansible: Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it." /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/raslenraslen/ansible-k8s-security-stack"><img src="./stats/projects/kubernetes-security-stack.svg" alt="Kubernetes security stack: Five security layers for Kubernetes: Gatekeeper, Falco, Polaris, Trivy and Vault, as Ansible roles." /></a>
-</p>
-
-<p align="center">
   <a href="https://github.com/raslenraslen/k8s-ingress-tls-lab"><img src="./stats/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: From NodePort to Let's Encrypt on AKS: Ingress, MetalLB and TLS in six documented stages." /></a>
-  <a href="https://github.com/raslenraslen/opa-gatekeeper-lab"><img src="./stats/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject." /></a>
 </p>
 
 <p align="center">
+  <a href="https://github.com/raslenraslen/opa-gatekeeper-lab"><img src="./stats/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject." /></a>
   <a href="https://github.com/raslenraslen/metallb-lab"><img src="./stats/projects/metallb-configuration.svg" alt="MetalLB configuration: LoadBalancer Services on bare metal with MetalLB in Layer 2, with install and test scripts." /></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/raslenraslen/projet-openstack"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Private cloud on OpenStack: controller, compute and storage services." /></a>
 </p>
 
