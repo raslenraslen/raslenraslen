@@ -63,7 +63,7 @@ mindset:   Automate it, secure it, then make it observable
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/projet-openstack"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Private cloud on OpenStack: controller, compute and storage services." /></a>
+  <a href="https://github.com/raslenraslen/openstack-private-cloud-lab"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Two-node OpenStack installed by hand: Keystone, Glance, Nova, Neutron and Horizon, plus Terraform." /></a>
 </p>
 
 ---

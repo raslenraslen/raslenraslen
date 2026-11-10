@@ -70,9 +70,9 @@
     },
     {
       "title": "OpenStack private cloud",
-      "description": "Private cloud on OpenStack: controller, compute and storage services.",
+      "description": "Two-node OpenStack installed by hand: Keystone, Glance, Nova, Neutron and Horizon, plus Terraform.",
       "stack": ["OpenStack", "Shell"],
-      "url": "https://github.com/raslenraslen/projet-openstack"
+      "url": "https://github.com/raslenraslen/openstack-private-cloud-lab"
     }
   ]
 }
