@@ -36,7 +36,7 @@
       "title": "CloudForge CI/CD platform",
       "description": "Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes.",
       "stack": ["GitHub Actions", "Kubernetes", "Trivy"],
-      "url": "https://github.com/raslenraslen/cloudforge-devops"
+      "url": "https://github.com/raslenraslen/cloudforge"
     },
     {
       "title": "Kubeadm cluster with Ansible",

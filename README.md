@@ -48,7 +48,7 @@ mindset:   Automate it, secure it, then make it observable
 #### Open source
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/cloudforge-devops"><img src="./stats/projects/cloudforge-ci-cd-platform.svg" alt="CloudForge CI/CD platform: Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes." /></a>
+  <a href="https://github.com/raslenraslen/cloudforge"><img src="./stats/projects/cloudforge-ci-cd-platform.svg" alt="CloudForge CI/CD platform: Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes." /></a>
   <a href="https://github.com/raslenraslen/ansible-kubeadm-cluster"><img src="./stats/projects/kubeadm-cluster-with-ansible.svg" alt="Kubeadm cluster with Ansible: Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it." /></a>
 </p>
 
