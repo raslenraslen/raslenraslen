@@ -31,39 +31,39 @@ mindset:   Automate it, secure it, then make it observable
 #### Recent work
 
 <p align="center">
-  <img src="./stats/projects/production-operator-upgrades.svg" alt="Production operator upgrades: Upgraded 7 operators on a production Kubernetes cluster (10 nodes, 46 apps), fixing critical CVEs." />
-  <img src="./stats/projects/microcloud-disaster-recovery.svg" alt="MicroCloud disaster recovery: Replication between two MicroCloud clusters, with failover and failback tested end to end." />
+  <img src="./assets/cards/projects/production-operator-upgrades.svg" alt="Production operator upgrades: Upgraded 7 operators on a production Kubernetes cluster (10 nodes, 46 apps), fixing critical CVEs." />
+  <img src="./assets/cards/projects/microcloud-disaster-recovery.svg" alt="MicroCloud disaster recovery: Replication between two MicroCloud clusters, with failover and failback tested end to end." />
 </p>
 
 <p align="center">
-  <img src="./stats/projects/microcloud-automation.svg" alt="MicroCloud automation: Automated MicroCloud cluster deployment with Ansible, idempotent and safe to re-run." />
-  <img src="./stats/projects/kubernetes-security-audit.svg" alt="Kubernetes security audit: CI gate that scans every manifest and blocks the merge on critical findings." />
+  <img src="./assets/cards/projects/microcloud-automation.svg" alt="MicroCloud automation: Automated MicroCloud cluster deployment with Ansible, idempotent and safe to re-run." />
+  <img src="./assets/cards/projects/kubernetes-security-audit.svg" alt="Kubernetes security audit: CI gate that scans every manifest and blocks the merge on critical findings." />
 </p>
 
 <p align="center">
-  <img src="./stats/projects/observability-platform.svg" alt="Observability platform: Metrics, logs, traces and alerting, with a runbook for every alert." />
-  <img src="./stats/projects/gitops-migration.svg" alt="GitOps migration: Moved application delivery from CI push deploys to Argo CD pull, with SSO." />
+  <img src="./assets/cards/projects/observability-platform.svg" alt="Observability platform: Metrics, logs, traces and alerting, with a runbook for every alert." />
+  <img src="./assets/cards/projects/gitops-migration.svg" alt="GitOps migration: Moved application delivery from CI push deploys to Argo CD pull, with SSO." />
 </p>
 
 #### Open source
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/cloudforge"><img src="./stats/projects/cloudforge-ci-cd-platform.svg" alt="CloudForge CI/CD platform: Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes." /></a>
-  <a href="https://github.com/raslenraslen/ansible-kubeadm-cluster"><img src="./stats/projects/kubeadm-cluster-with-ansible.svg" alt="Kubeadm cluster with Ansible: Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it." /></a>
+  <a href="https://github.com/raslenraslen/cloudforge"><img src="./assets/cards/projects/cloudforge-ci-cd-platform.svg" alt="CloudForge CI/CD platform: Per-service GitHub Actions pipelines with Trivy, SonarQube and blue/green deploys to Kubernetes." /></a>
+  <a href="https://github.com/raslenraslen/ansible-kubeadm-cluster"><img src="./assets/cards/projects/kubeadm-cluster-with-ansible.svg" alt="Kubeadm cluster with Ansible: Builds a kubeadm cluster on Ubuntu with containerd and Flannel, then adds workers or resets it." /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/ansible-k8s-security-stack"><img src="./stats/projects/kubernetes-security-stack.svg" alt="Kubernetes security stack: Five security layers for Kubernetes: Gatekeeper, Falco, Polaris, Trivy and Vault, as Ansible roles." /></a>
-  <a href="https://github.com/raslenraslen/k8s-ingress-tls-lab"><img src="./stats/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: From NodePort to Let's Encrypt on AKS: Ingress, MetalLB and TLS in six documented stages." /></a>
+  <a href="https://github.com/raslenraslen/ansible-k8s-security-stack"><img src="./assets/cards/projects/kubernetes-security-stack.svg" alt="Kubernetes security stack: Five security layers for Kubernetes: Gatekeeper, Falco, Polaris, Trivy and Vault, as Ansible roles." /></a>
+  <a href="https://github.com/raslenraslen/k8s-ingress-tls-lab"><img src="./assets/cards/projects/kubernetes-ingress-and-tls.svg" alt="Kubernetes ingress and TLS: From NodePort to Let's Encrypt on AKS: Ingress, MetalLB and TLS in six documented stages." /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/opa-gatekeeper-lab"><img src="./stats/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject." /></a>
-  <a href="https://github.com/raslenraslen/metallb-lab"><img src="./stats/projects/metallb-configuration.svg" alt="MetalLB configuration: LoadBalancer Services on bare metal with MetalLB in Layer 2, with install and test scripts." /></a>
+  <a href="https://github.com/raslenraslen/opa-gatekeeper-lab"><img src="./assets/cards/projects/opa-gatekeeper-guardrails.svg" alt="OPA Gatekeeper guardrails: Five Rego admission policies for Gatekeeper, each proven by a manifest the cluster must reject." /></a>
+  <a href="https://github.com/raslenraslen/metallb-lab"><img src="./assets/cards/projects/metallb-configuration.svg" alt="MetalLB configuration: LoadBalancer Services on bare metal with MetalLB in Layer 2, with install and test scripts." /></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/raslenraslen/openstack-private-cloud-lab"><img src="./stats/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Two-node OpenStack installed by hand: Keystone, Glance, Nova, Neutron and Horizon, plus Terraform." /></a>
+  <a href="https://github.com/raslenraslen/openstack-private-cloud-lab"><img src="./assets/cards/projects/openstack-private-cloud.svg" alt="OpenStack private cloud: Two-node OpenStack installed by hand: Keystone, Glance, Nova, Neutron and Horizon, plus Terraform." /></a>
 </p>
 
 ---
@@ -86,16 +86,16 @@ mindset:   Automate it, secure it, then make it observable
 > Cards below are generated by a [GitHub Action](.github/workflows/profile-cards.yml) running in this repo and committed as static SVGs, so no third-party API is called at render time.
 
 <p align="center">
-  <img src="./stats/overview.svg" alt="GitHub activity" />
+  <img src="./assets/cards/overview.svg" alt="GitHub activity" />
 </p>
 
 <p align="center">
-  <img src="./stats/languages.svg" alt="Languages" />
-  <img src="./stats/rank.svg" alt="GitHub rank" />
+  <img src="./assets/cards/languages.svg" alt="Languages" />
+  <img src="./assets/cards/rank.svg" alt="GitHub rank" />
 </p>
 
 <p align="center">
-  <img src="./stats/streak.svg" alt="Contribution streak" />
+  <img src="./assets/cards/streak.svg" alt="Contribution streak" />
 </p>
 
 ---

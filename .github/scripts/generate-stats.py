@@ -4,15 +4,15 @@
 Quatre SVG statiques, même palette que la bannière (bleu #1f6feb -> #36BCF7
 sur le fond GitHub dark) :
 
-  stats/overview.svg   chiffres clés + courbe des contributions sur 12 mois
-  stats/languages.svg  langages par nombre de repos
-  stats/rank.svg       rang façon github-readme-stats (S / A+ / ... / C)
-  stats/streak.svg     total, série en cours et plus longue série
+  assets/cards/overview.svg   chiffres clés + courbe des contributions sur 12 mois
+  assets/cards/languages.svg  langages par nombre de repos
+  assets/cards/rank.svg       rang façon github-readme-stats (S / A+ / ... / C)
+  assets/cards/streak.svg     total, série en cours et plus longue série
 
 Tout vient de l'API GraphQL de GitHub : aucun service tiers au rendu.
 
-Plus une carte par projet de projects.json (section « Featured Work ») dans
-stats/projects/, avec le même style.
+Plus une carte par projet de data/projects.json (section « Featured Work ») dans
+assets/cards/projects/, avec le même style.
 """
 import datetime as dt
 import json
@@ -27,8 +27,8 @@ from html import escape
 LOGIN = os.environ.get("STATS_LOGIN", "raslenraslen")
 TOKEN = os.environ.get("GITHUB_TOKEN")
 ROOT = pathlib.Path(__file__).resolve().parents[2]
-OUT = ROOT / "stats"
-PROJECTS = ROOT / "projects.json"
+OUT = ROOT / "assets" / "cards"
+PROJECTS = ROOT / "data" / "projects.json"
 
 # Liste blanche : la carte ne montre que l'outillage infra / DevOps / sécurité,
 # pas les langages des anciens projets de dev (HTML, Java, JavaScript...).
@@ -483,7 +483,7 @@ def main():
     OUT.mkdir(exist_ok=True)
     for name, render in (("overview", render_overview), ("languages", render_languages), ("rank", render_rank), ("streak", render_streak)):
         (OUT / f"{name}.svg").write_text(render(stats), encoding="utf-8")
-        print(f"  écrit  stats/{name}.svg")
+        print(f"  écrit  assets/cards/{name}.svg")
 
     projects_dir = OUT / "projects"
     projects_dir.mkdir(exist_ok=True)
@@ -493,7 +493,7 @@ def main():
     for project in sections["recent"] + sections["open_source"]:
         name = slugify(project["title"])
         (projects_dir / f"{name}.svg").write_text(render_project(project), encoding="utf-8")
-        print(f"  écrit  stats/projects/{name}.svg")
+        print(f"  écrit  assets/cards/projects/{name}.svg")
 
 
 if __name__ == "__main__":
